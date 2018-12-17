@@ -12,6 +12,17 @@
 		03008A9A21C3A56E008E7059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9821C3A56E008E7059 /* Main.storyboard */; };
 		03008A9C21C3A570008E7059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9B21C3A570008E7059 /* Assets.xcassets */; };
 		03008A9F21C3A570008E7059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9D21C3A570008E7059 /* LaunchScreen.storyboard */; };
+		03008AA721C3A665008E7059 /* ProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AA621C3A665008E7059 /* ProgressCell.swift */; };
+		03008AA921C3A90F008E7059 /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AA821C3A90F008E7059 /* ProgressViewModel.swift */; };
+		03008AAD21C4DDC4008E7059 /* GradientLayerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AAC21C4DDC4008E7059 /* GradientLayerColor.swift */; };
+		03008AAF21C4DF20008E7059 /* ColorSchemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AAE21C4DF20008E7059 /* ColorSchemes.swift */; };
+		03008AB721C4E8CB008E7059 /* Rajdhani-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB121C4E8CB008E7059 /* Rajdhani-Medium.ttf */; };
+		03008AB821C4E8CB008E7059 /* Rajdhani-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB221C4E8CB008E7059 /* Rajdhani-SemiBold.ttf */; };
+		03008AB921C4E8CB008E7059 /* Rajdhani-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB321C4E8CB008E7059 /* Rajdhani-Light.ttf */; };
+		03008ABA21C4E8CB008E7059 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */; };
+		03008ABB21C4E8CB008E7059 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB521C4E8CB008E7059 /* OFL.txt */; };
+		03008ABC21C4E8CB008E7059 /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */; };
+		B0B4FBC288405D7C0A08164C /* Pods_LiveProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,19 @@
 		03008A9B21C3A570008E7059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03008A9E21C3A570008E7059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03008AA021C3A570008E7059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03008AA621C3A665008E7059 /* ProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCell.swift; sourceTree = "<group>"; };
+		03008AA821C3A90F008E7059 /* ProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewModel.swift; sourceTree = "<group>"; };
+		03008AAC21C4DDC4008E7059 /* GradientLayerColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayerColor.swift; sourceTree = "<group>"; };
+		03008AAE21C4DF20008E7059 /* ColorSchemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemes.swift; sourceTree = "<group>"; };
+		03008AB121C4E8CB008E7059 /* Rajdhani-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Medium.ttf"; sourceTree = "<group>"; };
+		03008AB221C4E8CB008E7059 /* Rajdhani-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-SemiBold.ttf"; sourceTree = "<group>"; };
+		03008AB321C4E8CB008E7059 /* Rajdhani-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Light.ttf"; sourceTree = "<group>"; };
+		03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Bold.ttf"; sourceTree = "<group>"; };
+		03008AB521C4E8CB008E7059 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Regular.ttf"; sourceTree = "<group>"; };
+		19EDC3A0CB2598F646791F2D /* Pods-LiveProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.release.xcconfig"; sourceTree = "<group>"; };
+		8F16BCC3991B233EFFB82026 /* Pods-LiveProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.debug.xcconfig"; sourceTree = "<group>"; };
+		91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B4FBC288405D7C0A08164C /* Pods_LiveProgress.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +65,8 @@
 			children = (
 				03008A9321C3A56E008E7059 /* LiveProgress */,
 				03008A9221C3A56E008E7059 /* Products */,
+				D9FB3AA0C3526A59A301E189 /* Pods */,
+				793FCCBE0ECD2B3A69C0686B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +81,49 @@
 		03008A9321C3A56E008E7059 /* LiveProgress */ = {
 			isa = PBXGroup;
 			children = (
+				03008AB021C4E8CB008E7059 /* Rajdhani */,
 				03008A9421C3A56E008E7059 /* AppDelegate.swift */,
 				03008A9621C3A56E008E7059 /* ViewController.swift */,
 				03008A9821C3A56E008E7059 /* Main.storyboard */,
 				03008A9B21C3A570008E7059 /* Assets.xcassets */,
 				03008A9D21C3A570008E7059 /* LaunchScreen.storyboard */,
 				03008AA021C3A570008E7059 /* Info.plist */,
+				03008AA621C3A665008E7059 /* ProgressCell.swift */,
+				03008AA821C3A90F008E7059 /* ProgressViewModel.swift */,
+				03008AAC21C4DDC4008E7059 /* GradientLayerColor.swift */,
+				03008AAE21C4DF20008E7059 /* ColorSchemes.swift */,
 			);
 			path = LiveProgress;
+			sourceTree = "<group>";
+		};
+		03008AB021C4E8CB008E7059 /* Rajdhani */ = {
+			isa = PBXGroup;
+			children = (
+				03008AB121C4E8CB008E7059 /* Rajdhani-Medium.ttf */,
+				03008AB221C4E8CB008E7059 /* Rajdhani-SemiBold.ttf */,
+				03008AB321C4E8CB008E7059 /* Rajdhani-Light.ttf */,
+				03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */,
+				03008AB521C4E8CB008E7059 /* OFL.txt */,
+				03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */,
+			);
+			path = Rajdhani;
+			sourceTree = "<group>";
+		};
+		793FCCBE0ECD2B3A69C0686B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9FB3AA0C3526A59A301E189 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F16BCC3991B233EFFB82026 /* Pods-LiveProgress.debug.xcconfig */,
+				19EDC3A0CB2598F646791F2D /* Pods-LiveProgress.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03008AA321C3A570008E7059 /* Build configuration list for PBXNativeTarget "LiveProgress" */;
 			buildPhases = (
+				4EF8C2AF4A666D50F7C7E93B /* [CP] Check Pods Manifest.lock */,
 				03008A8D21C3A56E008E7059 /* Sources */,
 				03008A8E21C3A56E008E7059 /* Frameworks */,
 				03008A8F21C3A56E008E7059 /* Resources */,
+				A56FB03BCD2B2C07C242CB1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +188,64 @@
 			files = (
 				03008A9F21C3A570008E7059 /* LaunchScreen.storyboard in Resources */,
 				03008A9C21C3A570008E7059 /* Assets.xcassets in Resources */,
+				03008AB921C4E8CB008E7059 /* Rajdhani-Light.ttf in Resources */,
+				03008AB721C4E8CB008E7059 /* Rajdhani-Medium.ttf in Resources */,
+				03008ABA21C4E8CB008E7059 /* Rajdhani-Bold.ttf in Resources */,
+				03008AB821C4E8CB008E7059 /* Rajdhani-SemiBold.ttf in Resources */,
+				03008ABB21C4E8CB008E7059 /* OFL.txt in Resources */,
 				03008A9A21C3A56E008E7059 /* Main.storyboard in Resources */,
+				03008ABC21C4E8CB008E7059 /* Rajdhani-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EF8C2AF4A666D50F7C7E93B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveProgress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A56FB03BCD2B2C07C242CB1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03008A8D21C3A56E008E7059 /* Sources */ = {
@@ -136,7 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				03008A9721C3A56E008E7059 /* ViewController.swift in Sources */,
+				03008AA721C3A665008E7059 /* ProgressCell.swift in Sources */,
+				03008AAD21C4DDC4008E7059 /* GradientLayerColor.swift in Sources */,
 				03008A9521C3A56E008E7059 /* AppDelegate.swift in Sources */,
+				03008AAF21C4DF20008E7059 /* ColorSchemes.swift in Sources */,
+				03008AA921C3A90F008E7059 /* ProgressViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +401,7 @@
 		};
 		03008AA421C3A570008E7059 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F16BCC3991B233EFFB82026 /* Pods-LiveProgress.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +420,7 @@
 		};
 		03008AA521C3A570008E7059 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19EDC3A0CB2598F646791F2D /* Pods-LiveProgress.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

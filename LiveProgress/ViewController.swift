@@ -8,13 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
+   
+    @IBOutlet weak var tableView: UITableView!
+    var viewModels: [ProgressViewModel] = [ProgressViewModel(type: .day),
+                                           ProgressViewModel(type: .month),
+                                           ProgressViewModel(type: .year),
+                                           ProgressViewModel(type: .life)]
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.reloadData()
+        if let layer = GradientLayerColor.init(with: standardScheme.first, secondColor: standardScheme.last).layer {
+            layer.frame = view.bounds
+            view.layer.insertSublayer(layer, at: 0)
+        }
+
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModels.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let viewModel = viewModels[indexPath.row]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: viewModel.reuseIdentifier)
+            as? ProgressCell {
+            cell.setup(with: viewModel)
+            return cell
+        }
+        return UITableViewCell()
+    }
 
 }
 
