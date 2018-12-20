@@ -17,34 +17,36 @@ enum ProgressType {
 
 class ProgressViewModel {
     let reuseIdentifier = "ProgressCell"
-    let color: GradientLayerColor
     let type: ProgressType
     let title: String
     let progress: Double
+    let unit: String
     
     init(type: ProgressType) {
         self.type = type
-        self.color = ProgressViewModel.color(for: type)
         self.progress = ProgressViewModel.progress(for: type)
+        self.unit = ProgressViewModel.unit(for: type)
         self.title = ProgressViewModel.title(for: type)
+
     }
     
-    private static func color(for type: ProgressType) -> GradientLayerColor {
-        var result = GradientLayerColor(with: UIColor.black, secondColor: UIColor.white)
+    private static func title(for type: ProgressType) -> String {
+        var result = ""
+        let date = ProjectSettings.shared.birthDate
         switch type {
         case .day:
-            result = GradientLayerColor(with: standardScheme.first, secondColor: standardScheme.second)
+            result = DateHelper.daySince(date: date)
         case .month:
-            result = GradientLayerColor(with: standardScheme.second, secondColor: standardScheme.third)
+            result = DateHelper.monthSince(date: date)
         case .year:
-            result = GradientLayerColor(with: standardScheme.third, secondColor: standardScheme.forth)
+            result = DateHelper.yearSince(date: date)
         case .life:
-            result = GradientLayerColor(with: standardScheme.forth, secondColor: standardScheme.last)
+            result = ""
         }
         return result
     }
     
-    private static func title(for type: ProgressType) -> String {
+    private static func unit(for type: ProgressType) -> String {
         var result = "Progress"
         switch type {
         case .day:

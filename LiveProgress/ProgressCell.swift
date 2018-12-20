@@ -12,15 +12,20 @@ class ProgressCell: UITableViewCell {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var progressLabel: UILabel!
-    @IBOutlet weak var progressView: UIView!
+    @IBOutlet weak var unitLabel: UILabel!
+    @IBOutlet weak var progressView: LinearProgressBar! {
+        didSet {
+            progressView.barColor = standardScheme.third.withAlphaComponent(0.6)
+            progressView.trackColor = standardScheme.third.withAlphaComponent(0.2)
+            progressView.barThickness = 40.0
+        }
+    }
     
     func setup(with viewModel: ProgressViewModel) {
-//        if let backgroundLayer = viewModel.color.layer {
-//            backgroundLayer.frame = backView.bounds
-//            backView.layer.insertSublayer(backgroundLayer, at: 0)
-//        }
         titleLabel.text = viewModel.title
+        unitLabel.text = viewModel.unit
         progressLabel.text = String(viewModel.progress) + " %"
+        progressView.progressValue = CGFloat(viewModel.progress)
     }
 
 

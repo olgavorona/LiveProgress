@@ -9,34 +9,151 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Rajdhani-Bold.ttf">
+            <string>Rajdhani-Bold</string>
+        </array>
+        <array key="Rajdhani-Light.ttf">
+            <string>Rajdhani-Light</string>
+        </array>
         <array key="Rajdhani-Medium.ttf">
             <string>Rajdhani-Medium</string>
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="vOO-lp-MeO">
             <objects>
-                <viewController id="0w0-Oj-yMK" sceneMemberID="viewController">
+                <viewController id="0w0-Oj-yMK" customClass="StartViewController" customModule="LiveProgress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ut-oY-Gfn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Go-my-PpM">
-                                <rect key="frame" x="139" y="125" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="SGM-y0-NoB">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAW-5P-Kg9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="How long do you want to live?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXq-JN-L6k" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                                <rect key="frame" x="16" y="324" width="343" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                        <real key="value" value="0.80000000000000004"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                        <color key="value" red="0.0" green="0.63529411759999999" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                        <color key="value" red="0.76470588240000004" green="0.047058823530000002" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="1" alpha="0.7011183647260274" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiM-hm-nDZ">
+                                                <rect key="frame" x="16" y="576" width="343" height="60"/>
+                                                <color key="backgroundColor" red="0.0" green="0.63529411764705879" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="GSW-Tx-3fX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rajdhani-Bold" family="Rajdhani" pointSize="30"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Watch your progress">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="eQV-Eu-Lfw"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Birth Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Go-my-PpM" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                                <rect key="frame" x="16" y="224" width="343" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="BUc-jn-a0N"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="1" alpha="0.7011183647" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                        <color key="value" red="0.76470588240000004" green="0.047058823530000002" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                        <color key="value" red="0.0" green="0.63529411759999999" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                        <real key="value" value="0.80000000000000004"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App will customize progress for you " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmu-ff-HNm">
+                                                <rect key="frame" x="16" y="16" width="343" height="192"/>
+                                                <fontDescription key="fontDescription" name="Rajdhani-Bold" family="Rajdhani" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="MXq-JN-L6k" firstAttribute="top" secondItem="1Go-my-PpM" secondAttribute="bottom" constant="40" id="0Yn-Pr-RHf"/>
+                                            <constraint firstAttribute="trailing" secondItem="gmu-ff-HNm" secondAttribute="trailing" constant="16" id="0qy-Dw-fhq"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Go-my-PpM" secondAttribute="trailing" constant="16" id="2oz-J7-nl7"/>
+                                            <constraint firstItem="MXq-JN-L6k" firstAttribute="leading" secondItem="1Go-my-PpM" secondAttribute="leading" id="6h9-dF-6WA"/>
+                                            <constraint firstItem="MXq-JN-L6k" firstAttribute="trailing" secondItem="1Go-my-PpM" secondAttribute="trailing" id="7sl-pR-g74"/>
+                                            <constraint firstAttribute="bottom" secondItem="YiM-hm-nDZ" secondAttribute="bottom" constant="32" id="GxJ-mf-gtV"/>
+                                            <constraint firstAttribute="trailing" secondItem="YiM-hm-nDZ" secondAttribute="trailing" constant="16" id="HMW-Gq-bG9"/>
+                                            <constraint firstItem="1Go-my-PpM" firstAttribute="centerY" secondItem="HAW-5P-Kg9" secondAttribute="centerY" constant="-80" id="KAJ-sZ-kmT"/>
+                                            <constraint firstItem="1Go-my-PpM" firstAttribute="top" secondItem="gmu-ff-HNm" secondAttribute="bottom" constant="16" id="Lyc-KI-Xea"/>
+                                            <constraint firstItem="1Go-my-PpM" firstAttribute="leading" secondItem="HAW-5P-Kg9" secondAttribute="leading" constant="16" id="MEU-sD-LZD"/>
+                                            <constraint firstItem="1Go-my-PpM" firstAttribute="height" secondItem="MXq-JN-L6k" secondAttribute="height" id="Xgi-2r-XJK"/>
+                                            <constraint firstItem="gmu-ff-HNm" firstAttribute="top" secondItem="HAW-5P-Kg9" secondAttribute="top" constant="16" id="ZmA-Wz-5ef"/>
+                                            <constraint firstItem="YiM-hm-nDZ" firstAttribute="leading" secondItem="HAW-5P-Kg9" secondAttribute="leading" constant="16" id="eZD-hT-XSD"/>
+                                            <constraint firstItem="gmu-ff-HNm" firstAttribute="leading" secondItem="HAW-5P-Kg9" secondAttribute="leading" constant="16" id="q6I-vw-cIK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HAW-5P-Kg9" firstAttribute="top" secondItem="SGM-y0-NoB" secondAttribute="top" id="DJT-dR-fsP"/>
+                                    <constraint firstAttribute="trailing" secondItem="HAW-5P-Kg9" secondAttribute="trailing" id="M1c-KG-q5N"/>
+                                    <constraint firstAttribute="bottom" secondItem="HAW-5P-Kg9" secondAttribute="bottom" id="RXT-ZQ-Pz4"/>
+                                    <constraint firstItem="HAW-5P-Kg9" firstAttribute="leading" secondItem="SGM-y0-NoB" secondAttribute="leading" id="qcW-fV-A9x"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SGM-y0-NoB" firstAttribute="leading" secondItem="3Ut-oY-Gfn" secondAttribute="leading" id="E6C-kR-05b"/>
+                            <constraint firstItem="SGM-y0-NoB" firstAttribute="top" secondItem="3Ut-oY-Gfn" secondAttribute="top" constant="20" id="Y3w-2x-ykH"/>
+                            <constraint firstItem="HAW-5P-Kg9" firstAttribute="height" secondItem="3Ut-oY-Gfn" secondAttribute="height" constant="1" id="bRE-4V-Ogl"/>
+                            <constraint firstItem="HAW-5P-Kg9" firstAttribute="width" secondItem="gDK-68-4Ht" secondAttribute="width" id="fnH-SC-iLA"/>
+                            <constraint firstAttribute="trailing" secondItem="SGM-y0-NoB" secondAttribute="trailing" id="vI1-tf-oYi"/>
+                            <constraint firstAttribute="bottom" secondItem="SGM-y0-NoB" secondAttribute="bottom" id="xw8-pP-qgQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gDK-68-4Ht"/>
                     </view>
+                    <connections>
+                        <outlet property="birthDate" destination="1Go-my-PpM" id="Ynt-ca-qaW"/>
+                        <outlet property="nextButton" destination="YiM-hm-nDZ" id="Ccv-dU-DQV"/>
+                        <outlet property="plannedAge" destination="MXq-JN-L6k" id="fu1-Ca-S86"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7K-kU-Tjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586" y="56"/>
+            <point key="canvasLocation" x="-586.39999999999998" y="55.322338830584712"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -47,7 +164,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCj-ag-Xo8">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProgressCell" rowHeight="155" id="uqg-dh-BOw" customClass="ProgressCell" customModule="LiveProgress" customModuleProvider="target">
@@ -61,28 +178,34 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTL-AD-xIz">
-                                                            <rect key="frame" x="16" y="8" width="44" height="26"/>
-                                                            <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="20"/>
+                                                            <rect key="frame" x="16" y="38" width="64.5" height="38.5"/>
+                                                            <fontDescription key="fontDescription" name="Rajdhani-Light" family="Rajdhani" pointSize="30"/>
                                                             <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrY-6Y-XRd">
-                                                            <rect key="frame" x="0.0" y="64.5" width="375" height="90"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrY-6Y-XRd" customClass="LinearProgressBar" customModule="LiveProgress" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="114.5" width="375" height="40"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="90" id="XxP-QQ-7PG"/>
+                                                                <constraint firstAttribute="height" constant="40" id="XxP-QQ-7PG"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEW-Wg-cIS">
-                                                            <rect key="frame" x="267" y="8" width="92" height="48.5"/>
-                                                            <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="42"/>
+                                                            <rect key="frame" x="293.5" y="8" width="65.5" height="98.5"/>
+                                                            <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="30"/>
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eP-wF-X7Z">
+                                                            <rect key="frame" x="80.5" y="38" width="65.5" height="38.5"/>
+                                                            <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="30"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="TTL-AD-xIz" firstAttribute="top" secondItem="aGp-XP-vOI" secondAttribute="top" constant="8" id="BVb-OR-85S"/>
+                                                        <constraint firstItem="9eP-wF-X7Z" firstAttribute="leading" secondItem="TTL-AD-xIz" secondAttribute="trailing" id="7y1-Jk-rvS"/>
                                                         <constraint firstAttribute="bottom" secondItem="XrY-6Y-XRd" secondAttribute="bottom" id="JI4-4l-VYA"/>
                                                         <constraint firstItem="mEW-Wg-cIS" firstAttribute="top" secondItem="aGp-XP-vOI" secondAttribute="top" constant="8" id="JV0-2g-0Zd"/>
                                                         <constraint firstItem="XrY-6Y-XRd" firstAttribute="top" secondItem="mEW-Wg-cIS" secondAttribute="bottom" constant="8" id="TQL-1K-erw"/>
@@ -90,6 +213,8 @@
                                                         <constraint firstAttribute="trailing" secondItem="XrY-6Y-XRd" secondAttribute="trailing" id="bFF-O9-CW7"/>
                                                         <constraint firstAttribute="trailing" secondItem="mEW-Wg-cIS" secondAttribute="trailing" constant="16" id="bpV-hK-CP1"/>
                                                         <constraint firstItem="TTL-AD-xIz" firstAttribute="leading" secondItem="aGp-XP-vOI" secondAttribute="leading" constant="16" id="h0Q-xy-RXi"/>
+                                                        <constraint firstItem="TTL-AD-xIz" firstAttribute="centerY" secondItem="mEW-Wg-cIS" secondAttribute="centerY" id="kDh-Bl-d3s"/>
+                                                        <constraint firstItem="9eP-wF-X7Z" firstAttribute="centerY" secondItem="mEW-Wg-cIS" secondAttribute="centerY" id="rNd-8t-hJJ"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -110,8 +235,9 @@
                                         <connections>
                                             <outlet property="backView" destination="aGp-XP-vOI" id="U4F-8u-GjM"/>
                                             <outlet property="progressLabel" destination="mEW-Wg-cIS" id="dZW-Yw-qUF"/>
-                                            <outlet property="progressView" destination="XrY-6Y-XRd" id="qhe-Kh-xfp"/>
+                                            <outlet property="progressView" destination="XrY-6Y-XRd" id="UDa-dG-KSo"/>
                                             <outlet property="titleLabel" destination="TTL-AD-xIz" id="Tyi-9p-lMr"/>
+                                            <outlet property="unitLabel" destination="9eP-wF-X7Z" id="tW2-ds-9S5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -120,13 +246,23 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="asM-Bo-D0U"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4B-td-R3F">
+                                <rect key="frame" x="16" y="36" width="343" height="48"/>
+                                <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uCj-ag-Xo8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Db-I5-SRE"/>
-                            <constraint firstItem="uCj-ag-Xo8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6pB-3z-R9N"/>
+                            <constraint firstItem="uCj-ag-Xo8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="6pB-3z-R9N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o4B-td-R3F" secondAttribute="trailing" constant="16" id="7Sh-By-bbJ"/>
+                            <constraint firstItem="o4B-td-R3F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Pra-aF-OxB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uCj-ag-Xo8" secondAttribute="bottom" id="Snm-rx-JxJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uCj-ag-Xo8" secondAttribute="trailing" id="bMI-mQ-enp"/>
+                            <constraint firstItem="uCj-ag-Xo8" firstAttribute="top" secondItem="o4B-td-R3F" secondAttribute="bottom" constant="16" id="woA-tN-FLi"/>
+                            <constraint firstItem="o4B-td-R3F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="yaE-wg-ZDl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -136,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="314" y="81"/>
         </scene>
     </scenes>
 </document>

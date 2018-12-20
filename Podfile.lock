@@ -1,16 +1,16 @@
 PODS:
-  - JVFloatLabeledTextField (1.2.1)
+  - TextFieldEffects (1.5.0)
 
 DEPENDENCIES:
-  - JVFloatLabeledTextField
+  - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - JVFloatLabeledTextField
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
-  JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
+  TextFieldEffects: bf9e9cac7cb1a97d632fbcd0724bb6347dd86633
 
-PODFILE CHECKSUM: fe141c847cb876b949294545692fda6fedc5448b
+PODFILE CHECKSUM: f3137c700c43c0406c64a7a572f6de009e5f0279
 
 COCOAPODS: 1.5.3

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03008A9521C3A56E008E7059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008A9421C3A56E008E7059 /* AppDelegate.swift */; };
-		03008A9721C3A56E008E7059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008A9621C3A56E008E7059 /* ViewController.swift */; };
+		03008A9721C3A56E008E7059 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008A9621C3A56E008E7059 /* MainViewController.swift */; };
 		03008A9A21C3A56E008E7059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9821C3A56E008E7059 /* Main.storyboard */; };
 		03008A9C21C3A570008E7059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9B21C3A570008E7059 /* Assets.xcassets */; };
 		03008A9F21C3A570008E7059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9D21C3A570008E7059 /* LaunchScreen.storyboard */; };
@@ -22,13 +22,17 @@
 		03008ABA21C4E8CB008E7059 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */; };
 		03008ABB21C4E8CB008E7059 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB521C4E8CB008E7059 /* OFL.txt */; };
 		03008ABC21C4E8CB008E7059 /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */; };
+		03F996CE21C76FCB0026FB26 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996CD21C76FCB0026FB26 /* StartViewController.swift */; };
+		03F996D021C77E100026FB26 /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996CF21C77E100026FB26 /* LinearProgressBar.swift */; };
+		03F996D221C79B140026FB26 /* ProjectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D121C79B140026FB26 /* ProjectSettings.swift */; };
+		03F996D421C79B280026FB26 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D321C79B280026FB26 /* DateHelper.swift */; };
 		B0B4FBC288405D7C0A08164C /* Pods_LiveProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03008A9121C3A56E008E7059 /* LiveProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03008A9421C3A56E008E7059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03008A9621C3A56E008E7059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03008A9621C3A56E008E7059 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		03008A9921C3A56E008E7059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03008A9B21C3A570008E7059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03008A9E21C3A570008E7059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +47,10 @@
 		03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Bold.ttf"; sourceTree = "<group>"; };
 		03008AB521C4E8CB008E7059 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Regular.ttf"; sourceTree = "<group>"; };
+		03F996CD21C76FCB0026FB26 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		03F996CF21C77E100026FB26 /* LinearProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
+		03F996D121C79B140026FB26 /* ProjectSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettings.swift; sourceTree = "<group>"; };
+		03F996D321C79B280026FB26 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		19EDC3A0CB2598F646791F2D /* Pods-LiveProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.release.xcconfig"; sourceTree = "<group>"; };
 		8F16BCC3991B233EFFB82026 /* Pods-LiveProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.debug.xcconfig"; sourceTree = "<group>"; };
 		91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +91,7 @@
 			children = (
 				03008AB021C4E8CB008E7059 /* Rajdhani */,
 				03008A9421C3A56E008E7059 /* AppDelegate.swift */,
-				03008A9621C3A56E008E7059 /* ViewController.swift */,
+				03008A9621C3A56E008E7059 /* MainViewController.swift */,
 				03008A9821C3A56E008E7059 /* Main.storyboard */,
 				03008A9B21C3A570008E7059 /* Assets.xcassets */,
 				03008A9D21C3A570008E7059 /* LaunchScreen.storyboard */,
@@ -92,6 +100,10 @@
 				03008AA821C3A90F008E7059 /* ProgressViewModel.swift */,
 				03008AAC21C4DDC4008E7059 /* GradientLayerColor.swift */,
 				03008AAE21C4DF20008E7059 /* ColorSchemes.swift */,
+				03F996CD21C76FCB0026FB26 /* StartViewController.swift */,
+				03F996CF21C77E100026FB26 /* LinearProgressBar.swift */,
+				03F996D121C79B140026FB26 /* ProjectSettings.swift */,
+				03F996D321C79B280026FB26 /* DateHelper.swift */,
 			);
 			path = LiveProgress;
 			sourceTree = "<group>";
@@ -232,13 +244,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -252,12 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03008A9721C3A56E008E7059 /* ViewController.swift in Sources */,
+				03F996D221C79B140026FB26 /* ProjectSettings.swift in Sources */,
+				03008A9721C3A56E008E7059 /* MainViewController.swift in Sources */,
+				03F996CE21C76FCB0026FB26 /* StartViewController.swift in Sources */,
 				03008AA721C3A665008E7059 /* ProgressCell.swift in Sources */,
 				03008AAD21C4DDC4008E7059 /* GradientLayerColor.swift in Sources */,
+				03F996D421C79B280026FB26 /* DateHelper.swift in Sources */,
 				03008A9521C3A56E008E7059 /* AppDelegate.swift in Sources */,
 				03008AAF21C4DF20008E7059 /* ColorSchemes.swift in Sources */,
 				03008AA921C3A90F008E7059 /* ProgressViewModel.swift in Sources */,
+				03F996D021C77E100026FB26 /* LinearProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
