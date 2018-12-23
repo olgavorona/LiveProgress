@@ -89,21 +89,21 @@
 		03008A9321C3A56E008E7059 /* LiveProgress */ = {
 			isa = PBXGroup;
 			children = (
-				03008AB021C4E8CB008E7059 /* Rajdhani */,
 				03008A9421C3A56E008E7059 /* AppDelegate.swift */,
-				03008A9621C3A56E008E7059 /* MainViewController.swift */,
-				03008A9821C3A56E008E7059 /* Main.storyboard */,
 				03008A9B21C3A570008E7059 /* Assets.xcassets */,
-				03008A9D21C3A570008E7059 /* LaunchScreen.storyboard */,
+				03008AAE21C4DF20008E7059 /* ColorSchemes.swift */,
+				03F996D321C79B280026FB26 /* DateHelper.swift */,
+				03008AAC21C4DDC4008E7059 /* GradientLayerColor.swift */,
 				03008AA021C3A570008E7059 /* Info.plist */,
+				03008A9D21C3A570008E7059 /* LaunchScreen.storyboard */,
+				03F996CF21C77E100026FB26 /* LinearProgressBar.swift */,
+				03008A9821C3A56E008E7059 /* Main.storyboard */,
+				03008A9621C3A56E008E7059 /* MainViewController.swift */,
 				03008AA621C3A665008E7059 /* ProgressCell.swift */,
 				03008AA821C3A90F008E7059 /* ProgressViewModel.swift */,
-				03008AAC21C4DDC4008E7059 /* GradientLayerColor.swift */,
-				03008AAE21C4DF20008E7059 /* ColorSchemes.swift */,
-				03F996CD21C76FCB0026FB26 /* StartViewController.swift */,
-				03F996CF21C77E100026FB26 /* LinearProgressBar.swift */,
 				03F996D121C79B140026FB26 /* ProjectSettings.swift */,
-				03F996D321C79B280026FB26 /* DateHelper.swift */,
+				03008AB021C4E8CB008E7059 /* Rajdhani */,
+				03F996CD21C76FCB0026FB26 /* StartViewController.swift */,
 			);
 			path = LiveProgress;
 			sourceTree = "<group>";

@@ -32,7 +32,7 @@ class ProgressViewModel {
     
     private static func title(for type: ProgressType) -> String {
         var result = ""
-        let date = ProjectSettings.shared.birthDate
+        if let date = ProjectSettings.shared.birthDate {
         switch type {
         case .day:
             result = DateHelper.daySince(date: date)
@@ -42,6 +42,7 @@ class ProgressViewModel {
             result = DateHelper.yearSince(date: date)
         case .life:
             result = ""
+            }
         }
         return result
     }
@@ -65,11 +66,11 @@ class ProgressViewModel {
         var progress: Double = 0
             switch type {
             case .day:
-                progress = 15.2
+                progress = DateHelper.dayProgress()
             case .month:
-                progress = 59
+                progress = DateHelper.monthProgress()
             case .year:
-                progress = 14
+                progress = DateHelper.yearProgress()
             case .life:
                 progress = 27
             }

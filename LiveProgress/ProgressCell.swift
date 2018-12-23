@@ -24,7 +24,7 @@ class ProgressCell: UITableViewCell {
     func setup(with viewModel: ProgressViewModel) {
         titleLabel.text = viewModel.title
         unitLabel.text = viewModel.unit
-        progressLabel.text = String(viewModel.progress) + " %"
+        progressLabel.text = String(format: "%.1f", viewModel.progress) + " %"
         progressView.progressValue = CGFloat(viewModel.progress)
     }
 

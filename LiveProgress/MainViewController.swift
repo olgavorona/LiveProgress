@@ -17,6 +17,11 @@ class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSou
                                            ProgressViewModel(type: .life)]
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
+    }
+
+    func setupViews() {
+        tableView.separatorColor = UIColor.clear
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.reloadData()
@@ -24,9 +29,8 @@ class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSou
             layer.frame = view.bounds
             view.layer.insertSublayer(layer, at: 0)
         }
-
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModels.count
     }
