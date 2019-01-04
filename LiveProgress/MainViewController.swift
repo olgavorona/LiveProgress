@@ -13,8 +13,7 @@ class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSou
     @IBOutlet weak var tableView: UITableView!
     var viewModels: [ProgressViewModel] = [ProgressViewModel(type: .day),
                                            ProgressViewModel(type: .month),
-                                           ProgressViewModel(type: .year),
-                                           ProgressViewModel(type: .life)]
+                                           ProgressViewModel(type: .year)]
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -45,5 +44,8 @@ class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSou
         return UITableViewCell()
     }
 
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
 }
 

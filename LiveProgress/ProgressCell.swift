@@ -13,6 +13,7 @@ class ProgressCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var unitLabel: UILabel!
+    @IBOutlet weak var leftLabel: UILabel!
     @IBOutlet weak var progressView: LinearProgressBar! {
         didSet {
             progressView.barColor = standardScheme.third.withAlphaComponent(0.6)
@@ -24,7 +25,13 @@ class ProgressCell: UITableViewCell {
     func setup(with viewModel: ProgressViewModel) {
         titleLabel.text = viewModel.title
         unitLabel.text = viewModel.unit
-        progressLabel.text = String(format: "%.1f", viewModel.progress) + " %"
+        leftLabel.text = viewModel.left
+        if viewModel.progress == 0 {
+            progressLabel.isHidden = true
+        } else {
+            progressLabel.isHidden = false
+            progressLabel.text = String(format: "%.1f", viewModel.progress) + " %"
+        }
         progressView.progressValue = CGFloat(viewModel.progress)
     }
 

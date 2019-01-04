@@ -26,7 +26,7 @@ open class LinearProgressBar: UIView {
         didSet {
             if trackPadding < 0 {
                 trackPadding = 0
-            }else if trackPadding > barThickness {
+            } else if trackPadding > barThickness {
                 trackPadding = 0
             }
         }
@@ -91,21 +91,23 @@ open class LinearProgressBar: UIView {
             lineWidth: barThickness + trackPadding,
             begin: beginPoint,
             end: CGPoint(x: frame.size.width - barPadding - trackOffset, y: frame.size.height / 2),
-            lineCap: .round,
+            lineCap: .square,
             strokeColor: trackColor
         )
         
-        // Progress bar
-        let colorForBar = barColorForValue?(Float(progressValue)) ?? barColor
-        
-        drawOn(
-            context: context,
-            lineWidth: barThickness,
-            begin: beginPoint,
-            end: CGPoint(x: barPadding + trackOffset + calculatePercentage(), y: frame.size.height / 2),
-            lineCap: .round,
-            strokeColor: colorForBar
-        )
+        if progressValue != 0 {
+            // Progress bar
+            let colorForBar = barColorForValue?(Float(progressValue)) ?? barColor
+            
+            drawOn(
+                context: context,
+                lineWidth: barThickness,
+                begin: beginPoint,
+                end: CGPoint(x: barPadding + trackOffset + calculatePercentage(), y: frame.size.height / 2),
+                lineCap: .square,
+                strokeColor: colorForBar
+            )
+        }
     }
     
     /// Clear graphics context and redraw on bounds change

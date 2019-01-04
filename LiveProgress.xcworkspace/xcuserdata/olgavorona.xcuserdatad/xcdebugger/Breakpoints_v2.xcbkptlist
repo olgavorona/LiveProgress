@@ -2,4 +2,38 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LiveProgress/ColoredDatePicker.swift"
+            timestampString = "568282414.299858"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "addSubview(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LiveProgress/ProgressViewModel.swift"
+            timestampString = "568287626.8034559"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "title(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

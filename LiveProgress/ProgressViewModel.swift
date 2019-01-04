@@ -21,13 +21,14 @@ class ProgressViewModel {
     let title: String
     let progress: Double
     let unit: String
+    let left: String
     
     init(type: ProgressType) {
         self.type = type
         self.progress = ProgressViewModel.progress(for: type)
         self.unit = ProgressViewModel.unit(for: type)
         self.title = ProgressViewModel.title(for: type)
-
+        self.left = ProgressViewModel.left(for: type)
     }
     
     private static func title(for type: ProgressType) -> String {
@@ -61,6 +62,21 @@ class ProgressViewModel {
         }
         return result
     }
+    
+    private static func left(for type: ProgressType) -> String {
+        var left = ""
+        switch type {
+        case .day:
+            left = DateHelper.dayLeft()
+        case .month:
+            left = DateHelper.monthLeft()
+        case .year:
+            left = DateHelper.yearLeft()
+        case .life:
+            left = DateHelper.lifeLeft()
+        }
+        return left
+    }
         
     private static func progress(for type: ProgressType) -> Double {
         var progress: Double = 0
@@ -72,7 +88,7 @@ class ProgressViewModel {
             case .year:
                 progress = DateHelper.yearProgress()
             case .life:
-                progress = 27
+                progress = DateHelper.lifeProgress()
             }
         return progress
     }
