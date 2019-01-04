@@ -8,28 +8,42 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
+class MainViewController: GradientViewController, UITabBarDelegate, UITableViewDataSource {
    
-    @IBOutlet weak var tableView: UITableView!
-    var viewModels: [ProgressViewModel] = [ProgressViewModel(type: .day),
-                                           ProgressViewModel(type: .month),
-                                           ProgressViewModel(type: .year)]
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupViews()
-    }
-
-    func setupViews() {
-        tableView.separatorColor = UIColor.clear
-        tableView.estimatedRowHeight = 44.0
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.reloadData()
-        if let layer = GradientLayerColor.init(with: standardScheme.first, secondColor: standardScheme.last).layer {
-            layer.frame = view.bounds
-            view.layer.insertSublayer(layer, at: 0)
+    //MARK: Variables
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.separatorColor = UIColor.clear
+            tableView.estimatedRowHeight = 44.0
+            tableView.rowHeight = UITableView.automaticDimension
         }
     }
     
+    var viewModels: [ProgressViewModel] = []
+   
+    //MARK: View Controller
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        updateData()
+    }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
+    func updateData() {
+        viewModels = [ProgressViewModel(type: .day),
+                      ProgressViewModel(type: .month),
+                      ProgressViewModel(type: .year)]
+        tableView.reloadData()
+    }
+    
+    //MARK: Table View
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModels.count
     }
@@ -43,12 +57,9 @@ class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSou
         }
         return UITableViewCell()
     }
+    
+    //MARK: Actions
 
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        return UIStatusBarStyle.lightContent
-    }
-    
-    
     @IBAction func showSettings(_ sender: Any) {
         guard let vc = Router.shared.startVC() else { return }
         show(vc, sender: self)

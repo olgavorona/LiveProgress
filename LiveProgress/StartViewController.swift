@@ -10,7 +10,7 @@ import UIKit
 import TextFieldEffects
 
 
-final class StartViewController: UIViewController {
+final class StartViewController: GradientViewController {
   
     //MARK:- Variables
 
@@ -76,12 +76,8 @@ final class StartViewController: UIViewController {
         if let date = ProjectSettings.shared.birthDate {
             birthDate.text = DateHelper.birthDateFormatter.string(from: date)
             datePicker.date = date
-            datePicker.setValue(UIColor.white, forKeyPath: "textColor")
         }
-        if let layer = GradientLayerColor.init(with: standardScheme.first, secondColor: standardScheme.last).layer {
-            layer.frame = view.bounds
-            view.layer.insertSublayer(layer, at: 0)
-        }
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")
     }
     
     //MARK:- Actions
@@ -93,8 +89,10 @@ final class StartViewController: UIViewController {
     }
     
     @IBAction func saveChanges(_ sender: Any) {
-        ProjectSettings.shared.birthDate = datePicker.date
-        goToMain()
+        if (birthDate.text?.count ?? 0) > 0 {
+            ProjectSettings.shared.birthDate = datePicker.date
+            goToMain()
+        }
     }
     
     @IBAction func cancelChanges(_ sender: Any) {
