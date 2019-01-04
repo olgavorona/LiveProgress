@@ -22,6 +22,7 @@
 		03008ABA21C4E8CB008E7059 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */; };
 		03008ABB21C4E8CB008E7059 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB521C4E8CB008E7059 /* OFL.txt */; };
 		03008ABC21C4E8CB008E7059 /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */; };
+		03A1199121DF740B00ED70F3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1199021DF740B00ED70F3 /* Router.swift */; };
 		03F996CE21C76FCB0026FB26 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996CD21C76FCB0026FB26 /* StartViewController.swift */; };
 		03F996D021C77E100026FB26 /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996CF21C77E100026FB26 /* LinearProgressBar.swift */; };
 		03F996D221C79B140026FB26 /* ProjectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D121C79B140026FB26 /* ProjectSettings.swift */; };
@@ -47,6 +48,7 @@
 		03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Bold.ttf"; sourceTree = "<group>"; };
 		03008AB521C4E8CB008E7059 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Regular.ttf"; sourceTree = "<group>"; };
+		03A1199021DF740B00ED70F3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		03F996CD21C76FCB0026FB26 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		03F996CF21C77E100026FB26 /* LinearProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
 		03F996D121C79B140026FB26 /* ProjectSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettings.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				03008AA821C3A90F008E7059 /* ProgressViewModel.swift */,
 				03F996D121C79B140026FB26 /* ProjectSettings.swift */,
 				03008AB021C4E8CB008E7059 /* Rajdhani */,
+				03A1199021DF740B00ED70F3 /* Router.swift */,
 				03F996CD21C76FCB0026FB26 /* StartViewController.swift */,
 			);
 			path = LiveProgress;
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A1199121DF740B00ED70F3 /* Router.swift in Sources */,
 				03F996D221C79B140026FB26 /* ProjectSettings.swift in Sources */,
 				03008A9721C3A56E008E7059 /* MainViewController.swift in Sources */,
 				03F996CE21C76FCB0026FB26 /* StartViewController.swift in Sources */,

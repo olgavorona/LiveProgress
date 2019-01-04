@@ -47,5 +47,11 @@ class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSou
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }
+    
+    
+    @IBAction func showSettings(_ sender: Any) {
+        guard let vc = Router.shared.startVC() else { return }
+        show(vc, sender: self)
+    }
 }
 

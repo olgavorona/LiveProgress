@@ -23,7 +23,7 @@
         <!--Start View Controller-->
         <scene sceneID="vOO-lp-MeO">
             <objects>
-                <viewController id="0w0-Oj-yMK" customClass="StartViewController" customModule="LiveProgress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartViewController" id="0w0-Oj-yMK" customClass="StartViewController" customModule="LiveProgress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ut-oY-Gfn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" identifier="skip" id="dRo-nr-hOr"/>
+                                                    <action selector="cancelChanges:" destination="0w0-Oj-yMK" eventType="touchUpInside" id="n8D-GA-bf1"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Birth Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Go-my-PpM" customClass="HoshiTextField" customModule="TextFieldEffects">
@@ -111,7 +111,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" identifier="save" id="eQV-Eu-Lfw"/>
+                                                    <action selector="saveChanges:" destination="0w0-Oj-yMK" eventType="touchUpInside" id="UsB-aJ-WnA"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -160,6 +160,9 @@
                         <outlet property="birthDate" destination="1Go-my-PpM" id="Ynt-ca-qaW"/>
                         <outlet property="datePicker" destination="29e-z0-sE7" id="Tzp-tZ-bjT"/>
                         <outlet property="nextButton" destination="YiM-hm-nDZ" id="Ccv-dU-DQV"/>
+                        <outlet property="skipButton" destination="ksB-Wn-QUp" id="yrZ-Xx-4iM"/>
+                        <outlet property="titleLabel" destination="gmu-ff-HNm" id="Yoc-UO-8fq"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="main" id="qzU-Lf-T50"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7K-kU-Tjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,7 +172,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="LiveProgress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="LiveProgress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,6 +290,9 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button" image="settings_1108180"/>
+                                        <connections>
+                                            <action selector="showSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWO-kw-Qpd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -319,13 +325,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="81"/>
+            <point key="canvasLocation" x="801" y="55"/>
         </scene>
     </scenes>
     <resources>
         <image name="settings_1108180" width="491.51998901367188" height="491.51998901367188"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="eQV-Eu-Lfw"/>
-    </inferredMetricsTieBreakers>
 </document>
