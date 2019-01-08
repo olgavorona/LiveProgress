@@ -24,12 +24,55 @@
 		03008ABC21C4E8CB008E7059 /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */; };
 		03A1199121DF740B00ED70F3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1199021DF740B00ED70F3 /* Router.swift */; };
 		03A1199321DF9C7B00ED70F3 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1199221DF9C7B00ED70F3 /* LaunchScreen.swift */; };
+		03C24A5221E3AE5B006DA775 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */; };
+		03C24A5421E4F0A3006DA775 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C24A5321E4F0A2006DA775 /* ProgressView.xib */; };
+		03C24A5621E4F1E4006DA775 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C24A5521E4F1E4006DA775 /* UIViewExtension.swift */; };
+		03C24A5721E4F429006DA775 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C24A5321E4F0A2006DA775 /* ProgressView.xib */; };
 		03F996CE21C76FCB0026FB26 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996CD21C76FCB0026FB26 /* StartViewController.swift */; };
 		03F996D021C77E100026FB26 /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996CF21C77E100026FB26 /* LinearProgressBar.swift */; };
 		03F996D221C79B140026FB26 /* ProjectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D121C79B140026FB26 /* ProjectSettings.swift */; };
 		03F996D421C79B280026FB26 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D321C79B280026FB26 /* DateHelper.swift */; };
+		03FAC02621E374020082685E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FAC02521E374020082685E /* NotificationCenter.framework */; };
+		03FAC02921E374020082685E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAC02821E374020082685E /* TodayViewController.swift */; };
+		03FAC02C21E374020082685E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FAC02A21E374020082685E /* MainInterface.storyboard */; };
+		03FAC03021E374020082685E /* ProgressToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03FAC02421E374020082685E /* ProgressToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03FAC03721E378910082685E /* ProjectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D121C79B140026FB26 /* ProjectSettings.swift */; };
+		03FAC03821E378B20082685E /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AA821C3A90F008E7059 /* ProgressViewModel.swift */; };
+		03FAC03921E393AC0082685E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9B21C3A570008E7059 /* Assets.xcassets */; };
+		03FAC03A21E393DA0082685E /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D321C79B280026FB26 /* DateHelper.swift */; };
+		03FAC03C21E396B50082685E /* ColorSchemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AAE21C4DF20008E7059 /* ColorSchemes.swift */; };
+		03FAC03E21E3970F0082685E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAC03D21E3970F0082685E /* ProgressView.swift */; };
+		03FAC03F21E399030082685E /* Rajdhani-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB321C4E8CB008E7059 /* Rajdhani-Light.ttf */; };
+		03FAC04021E399060082685E /* Rajdhani-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB121C4E8CB008E7059 /* Rajdhani-Medium.ttf */; };
+		03FAC04121E399080082685E /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */; };
+		03FAC04321E399D30082685E /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAC04221E399D30082685E /* CircularProgressBar.swift */; };
+		03FAC04421E3A73F0082685E /* Rajdhani-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB221C4E8CB008E7059 /* Rajdhani-SemiBold.ttf */; };
 		B0B4FBC288405D7C0A08164C /* Pods_LiveProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03FAC02E21E374020082685E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03008A8921C3A56E008E7059 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03FAC02321E374020082685E;
+			remoteInfo = ProgressToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03FAC03421E374020082685E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03FAC03021E374020082685E /* ProgressToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03008A9121C3A56E008E7059 /* LiveProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,10 +94,21 @@
 		03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Regular.ttf"; sourceTree = "<group>"; };
 		03A1199021DF740B00ED70F3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		03A1199221DF9C7B00ED70F3 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		03C24A5321E4F0A2006DA775 /* ProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressView.xib; sourceTree = "<group>"; };
+		03C24A5521E4F1E4006DA775 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		03F996CD21C76FCB0026FB26 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		03F996CF21C77E100026FB26 /* LinearProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
 		03F996D121C79B140026FB26 /* ProjectSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettings.swift; sourceTree = "<group>"; };
 		03F996D321C79B280026FB26 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		03FAC02421E374020082685E /* ProgressToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ProgressToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FAC02521E374020082685E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		03FAC02821E374020082685E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		03FAC02B21E374020082685E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		03FAC02D21E374020082685E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FAC03521E3778E0082685E /* LiveProgress.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiveProgress.entitlements; sourceTree = "<group>"; };
+		03FAC03621E377D20082685E /* ProgressToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProgressToday.entitlements; sourceTree = "<group>"; };
+		03FAC03D21E3970F0082685E /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		03FAC04221E399D30082685E /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		19EDC3A0CB2598F646791F2D /* Pods-LiveProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.release.xcconfig"; sourceTree = "<group>"; };
 		8F16BCC3991B233EFFB82026 /* Pods-LiveProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.debug.xcconfig"; sourceTree = "<group>"; };
 		91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +123,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03FAC02121E374020082685E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FAC02621E374020082685E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				03008A9321C3A56E008E7059 /* LiveProgress */,
+				03FAC02721E374020082685E /* ProgressToday */,
 				03008A9221C3A56E008E7059 /* Products */,
 				D9FB3AA0C3526A59A301E189 /* Pods */,
 				793FCCBE0ECD2B3A69C0686B /* Frameworks */,
@@ -86,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				03008A9121C3A56E008E7059 /* LiveProgress.app */,
+				03FAC02421E374020082685E /* ProgressToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +157,7 @@
 		03008A9321C3A56E008E7059 /* LiveProgress */ = {
 			isa = PBXGroup;
 			children = (
+				03FAC03521E3778E0082685E /* LiveProgress.entitlements */,
 				03008A9421C3A56E008E7059 /* AppDelegate.swift */,
 				03008A9B21C3A570008E7059 /* Assets.xcassets */,
 				03008AAE21C4DF20008E7059 /* ColorSchemes.swift */,
@@ -127,10 +192,27 @@
 			path = Rajdhani;
 			sourceTree = "<group>";
 		};
+		03FAC02721E374020082685E /* ProgressToday */ = {
+			isa = PBXGroup;
+			children = (
+				03FAC03621E377D20082685E /* ProgressToday.entitlements */,
+				03FAC02821E374020082685E /* TodayViewController.swift */,
+				03FAC02A21E374020082685E /* MainInterface.storyboard */,
+				03FAC02D21E374020082685E /* Info.plist */,
+				03FAC03D21E3970F0082685E /* ProgressView.swift */,
+				03FAC04221E399D30082685E /* CircularProgressBar.swift */,
+				03C24A5321E4F0A2006DA775 /* ProgressView.xib */,
+				03C24A5521E4F1E4006DA775 /* UIViewExtension.swift */,
+			);
+			path = ProgressToday;
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
 		793FCCBE0ECD2B3A69C0686B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */,
+				03FAC02521E374020082685E /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,15 +238,34 @@
 				03008A8E21C3A56E008E7059 /* Frameworks */,
 				03008A8F21C3A56E008E7059 /* Resources */,
 				A56FB03BCD2B2C07C242CB1A /* [CP] Embed Pods Frameworks */,
+				03FAC03421E374020082685E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				03FAC02F21E374020082685E /* PBXTargetDependency */,
 			);
 			name = LiveProgress;
 			productName = LiveProgress;
 			productReference = 03008A9121C3A56E008E7059 /* LiveProgress.app */;
 			productType = "com.apple.product-type.application";
+		};
+		03FAC02321E374020082685E /* ProgressToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FAC03321E374020082685E /* Build configuration list for PBXNativeTarget "ProgressToday" */;
+			buildPhases = (
+				03FAC02021E374020082685E /* Sources */,
+				03FAC02121E374020082685E /* Frameworks */,
+				03FAC02221E374020082685E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressToday;
+			productName = ProgressToday;
+			productReference = 03FAC02421E374020082685E /* ProgressToday.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -172,12 +273,28 @@
 		03008A8921C3A56E008E7059 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Olga Vorona";
 				TargetAttributes = {
 					03008A9021C3A56E008E7059 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+					03FAC02321E374020082685E = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -195,6 +312,7 @@
 			projectRoot = "";
 			targets = (
 				03008A9021C3A56E008E7059 /* LiveProgress */,
+				03FAC02321E374020082685E /* ProgressToday */,
 			);
 		};
 /* End PBXProject section */
@@ -211,8 +329,24 @@
 				03008ABA21C4E8CB008E7059 /* Rajdhani-Bold.ttf in Resources */,
 				03008AB821C4E8CB008E7059 /* Rajdhani-SemiBold.ttf in Resources */,
 				03008ABB21C4E8CB008E7059 /* OFL.txt in Resources */,
+				03C24A5721E4F429006DA775 /* ProgressView.xib in Resources */,
 				03008A9A21C3A56E008E7059 /* Main.storyboard in Resources */,
 				03008ABC21C4E8CB008E7059 /* Rajdhani-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FAC02221E374020082685E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FAC04421E3A73F0082685E /* Rajdhani-SemiBold.ttf in Resources */,
+				03C24A5421E4F0A3006DA775 /* ProgressView.xib in Resources */,
+				03FAC03921E393AC0082685E /* Assets.xcassets in Resources */,
+				03FAC02C21E374020082685E /* MainInterface.storyboard in Resources */,
+				03FAC04021E399060082685E /* Rajdhani-Medium.ttf in Resources */,
+				03C24A5221E3AE5B006DA775 /* Rajdhani-Bold.ttf in Resources */,
+				03FAC03F21E399030082685E /* Rajdhani-Light.ttf in Resources */,
+				03FAC04121E399080082685E /* Rajdhani-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +419,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		03FAC02021E374020082685E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FAC03821E378B20082685E /* ProgressViewModel.swift in Sources */,
+				03FAC03A21E393DA0082685E /* DateHelper.swift in Sources */,
+				03FAC04321E399D30082685E /* CircularProgressBar.swift in Sources */,
+				03FAC03721E378910082685E /* ProjectSettings.swift in Sources */,
+				03FAC03E21E3970F0082685E /* ProgressView.swift in Sources */,
+				03FAC03C21E396B50082685E /* ColorSchemes.swift in Sources */,
+				03C24A5621E4F1E4006DA775 /* UIViewExtension.swift in Sources */,
+				03FAC02921E374020082685E /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03FAC02F21E374020082685E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03FAC02321E374020082685E /* ProgressToday */;
+			targetProxy = 03FAC02E21E374020082685E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		03008A9821C3A56E008E7059 /* Main.storyboard */ = {
@@ -302,6 +459,14 @@
 				03008A9E21C3A570008E7059 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		03FAC02A21E374020082685E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03FAC02B21E374020082685E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -427,7 +592,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F16BCC3991B233EFFB82026 /* Pods-LiveProgress.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiveProgress/LiveProgress.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SC8JJ92TL6;
 				INFOPLIST_FILE = LiveProgress/Info.plist;
@@ -446,7 +613,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19EDC3A0CB2598F646791F2D /* Pods-LiveProgress.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiveProgress/LiveProgress.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SC8JJ92TL6;
 				INFOPLIST_FILE = LiveProgress/Info.plist;
@@ -456,6 +625,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ovorona.LiveProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		03FAC03121E374020082685E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ProgressToday/ProgressToday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC8JJ92TL6;
+				INFOPLIST_FILE = ProgressToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ovorona.LiveProgress.ProgressToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		03FAC03221E374020082685E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ProgressToday/ProgressToday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC8JJ92TL6;
+				INFOPLIST_FILE = ProgressToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ovorona.LiveProgress.ProgressToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -478,6 +689,15 @@
 			buildConfigurations = (
 				03008AA421C3A570008E7059 /* Debug */,
 				03008AA521C3A570008E7059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03FAC03321E374020082685E /* Build configuration list for PBXNativeTarget "ProgressToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FAC03121E374020082685E /* Debug */,
+				03FAC03221E374020082685E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

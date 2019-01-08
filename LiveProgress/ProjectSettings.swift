@@ -10,7 +10,7 @@ import Foundation
 
 class ProjectSettings {
     static let shared = ProjectSettings()
-    private let defaults = UserDefaults.standard
+    private let defaults = UserDefaults(suiteName: "group.progress.TodayExtension") ?? UserDefaults.standard
   
     var birthDate : Date? {
         set { defaults.set(newValue, forKey: "dateBirth") }

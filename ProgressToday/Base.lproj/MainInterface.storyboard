@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rajdhani-Bold.ttf">
+            <string>Rajdhani-Bold</string>
+        </array>
+        <array key="Rajdhani-Regular.ttf">
+            <string>Rajdhani-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="ProgressToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="XeW-eP-ZTv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edi-YE-fGg">
+                                <rect key="frame" x="4" y="88" width="32" height="22"/>
+                                <fontDescription key="fontDescription" name="Rajdhani-Bold" family="Rajdhani" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ay9-Nf-jyr">
+                                <rect key="frame" x="36" y="0.0" width="284" height="110"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVI-Fw-pIH">
+                                <rect key="frame" x="4" y="34" width="40.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Rajdhani-Regular" family="Rajdhani" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yVI-Fw-pIH" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="4" id="EVX-ZM-wk1"/>
+                            <constraint firstItem="ay9-Nf-jyr" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="EmK-gB-Y7o"/>
+                            <constraint firstItem="ay9-Nf-jyr" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="Gsc-g6-9YG"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="Edi-YE-fGg" secondAttribute="bottom" id="KXh-T0-MvU"/>
+                            <constraint firstItem="Edi-YE-fGg" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="4" id="NdH-Qg-dVc"/>
+                            <constraint firstItem="XeW-eP-ZTv" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="RFS-fh-Fxp"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="ay9-Nf-jyr" secondAttribute="trailing" id="V0U-Cf-RSj"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="XeW-eP-ZTv" secondAttribute="trailing" id="an0-b5-2LZ"/>
+                            <constraint firstItem="ay9-Nf-jyr" firstAttribute="leading" secondItem="Edi-YE-fGg" secondAttribute="trailing" id="jUz-W9-A6b"/>
+                            <constraint firstItem="yVI-Fw-pIH" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="34" id="qNY-oK-BvD"/>
+                            <constraint firstItem="XeW-eP-ZTv" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="wrN-yF-O1m"/>
+                            <constraint firstAttribute="bottom" secondItem="XeW-eP-ZTv" secondAttribute="bottom" id="xMK-YH-BMW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="110"/>
+                    <connections>
+                        <outlet property="stackView" destination="ay9-Nf-jyr" id="rnt-uj-yRI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.799999999999997" y="27.886056971514247"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gradient" width="334" height="517"/>
+    </resources>
+</document>

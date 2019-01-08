@@ -15,15 +15,15 @@ final class StartViewController: GradientViewController {
     //MARK:- Variables
 
     
-    private let MinYears = -100
-    private let MaxYears = -10
+    private let MinYears = -120
+    private let MaxYears = -4
     
     private let firstOpen = ProjectSettings.shared.firstOpen
     
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
             if !firstOpen {
-            titleLabel.text = "App will customize progress for you "
+            titleLabel.text = "App will customize progress for you"
             } else {
             titleLabel.text = "Please select birth date"
             }

@@ -22,6 +22,11 @@ class ProgressViewModel {
     let progress: Double
     let unit: String
     let left: String
+ 
+    let leftNumber: Int
+    let todayUnit: String
+    let dateString: String
+
     
     init(type: ProgressType) {
         self.type = type
@@ -29,6 +34,24 @@ class ProgressViewModel {
         self.unit = ProgressViewModel.unit(for: type)
         self.title = ProgressViewModel.title(for: type)
         self.left = ProgressViewModel.left(for: type)
+        self.todayUnit = ProgressViewModel.todayUnit(for: type)
+        self.leftNumber = ProgressViewModel.leftNumber(for: type)
+        self.dateString = ProgressViewModel.dateString(for: type)
+    }
+    
+    private static func progress(for type: ProgressType) -> Double {
+        var progress: Double = 0
+        switch type {
+        case .day:
+            progress = DateHelper.dayProgress()
+        case .month:
+            progress = DateHelper.monthProgress()
+        case .year:
+            progress = DateHelper.yearProgress()
+        case .life:
+            progress = DateHelper.lifeProgress()
+        }
+        return progress
     }
     
     private static func title(for type: ProgressType) -> String {
@@ -63,8 +86,23 @@ class ProgressViewModel {
         return result
     }
     
-    private static func left(for type: ProgressType) -> String {
-        var left = ""
+    private static func todayUnit(for type: ProgressType) -> String {
+        var result = "Progress"
+        switch type {
+        case .day:
+            result = "minutes"
+        case .month:
+            result = "days"
+        case .year:
+            result = "days"
+        case .life:
+            result = "Life"
+        }
+        return result
+    }
+    
+    private static func leftNumber(for type: ProgressType) -> Int {
+        var left = 0
         switch type {
         case .day:
             left = DateHelper.dayLeft()
@@ -77,21 +115,37 @@ class ProgressViewModel {
         }
         return left
     }
+    
+    private static func left(for type: ProgressType) -> String {
+        var left = ""
+        switch type {
+        case .day:
+            left = "\(DateHelper.dayLeft()) minutes till tomorrow"
+        case .month:
+            left = "\(DateHelper.monthLeft()) days till " + DateHelper.nextMonth()
+        case .year:
+            left =  "\(DateHelper.yearLeft()) days till next year"
+        case .life:
+            left = "\(DateHelper.lifeLeft())"
+        }
+        return left
+    }
         
-    private static func progress(for type: ProgressType) -> Double {
-        var progress: Double = 0
+    private static func dateString(for type: ProgressType) -> String {
+        var date: String = ""
             switch type {
             case .day:
-                progress = DateHelper.dayProgress()
+                date = DateHelper.currentDay()
             case .month:
-                progress = DateHelper.monthProgress()
+                date = DateHelper.currentMonth()
             case .year:
-                progress = DateHelper.yearProgress()
+                date = DateHelper.currentYear()
             case .life:
-                progress = DateHelper.lifeProgress()
+                date = ""
             }
-        return progress
+        return date
     }
+    
     
     
 }

@@ -18,6 +18,9 @@
         <array key="Rajdhani-Medium.ttf">
             <string>Rajdhani-Medium</string>
         </array>
+        <array key="Rajdhani-Regular.ttf">
+            <string>Rajdhani-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Start View Controller-->
@@ -202,7 +205,7 @@
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d5-bl-Ga4">
                                                                     <rect key="frame" x="16" y="0.0" width="343" height="40"/>
-                                                                    <fontDescription key="fontDescription" name="Rajdhani-Light" family="Rajdhani" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" name="Rajdhani-Regular" family="Rajdhani" pointSize="20"/>
                                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>

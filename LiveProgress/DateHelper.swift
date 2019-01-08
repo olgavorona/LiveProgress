@@ -56,25 +56,25 @@ class DateHelper {
     }
     
     //MARK :- Left
-    static func dayLeft() -> String {
+    static func dayLeft() -> Int {
         let minutesLeft = Int((Double(60 * 60 * 24) - currentSecond()) / 60)
-        return String(minutesLeft) + " minutes till tomorrow"
+        return minutesLeft
     }
     
-    static func yearLeft() -> String {
+    static func yearLeft() -> Int {
         let result = 365 - currentDay()
-        return String(result) + " days till next year"
+        return result
     }
     
-    static func monthLeft() -> String {
+    static func monthLeft() -> Int {
         let now = Date()
         let currentDay = calendar.component(.day, from: now)
         let left = daysInMonth() - currentDay
-        return String(left) + " days till February"
+        return left
     }
     
-    static func lifeLeft() -> String {
-        return "one life left"
+    static func lifeLeft() -> Int {
+        return 0
     }
 
     //MARK :- Formatter
@@ -88,6 +88,36 @@ class DateHelper {
     
     //MARK :- Helper
 
+    static func nextMonth() -> String {
+        let now = Date()
+        let startMonth = calendar.date(from: calendar.dateComponents([.year, .month], from: now)) ?? now
+        let nextMonth = calendar.date(byAdding: DateComponents(month: 1), to: startMonth) ?? now
+        let f = DateFormatter()
+        f.dateFormat = "MMMM"
+        return f.string(from: nextMonth)
+    }
+    
+    static func currentMonth() -> String {
+        let f = DateFormatter()
+        f.dateFormat = "MMM"
+        return f.string(from: Date())
+    }
+    
+    static func currentYear() -> String {
+        let f = DateFormatter()
+        f.dateFormat = "YYYY"
+        return f.string(from: Date())
+    }
+    
+    static func currentDay() -> String {
+        let f = DateFormatter()
+        f.dateFormat = "D"
+        let day = f.string(from: Date())
+        let suffix = ordinalSuffix(from: Int(day) ?? 0)
+        return day + suffix
+    }
+    
+    
     static func dateFromNow(years: Int) -> Date {
        return calendar.date(byAdding: .year, value: years, to: Date()) ?? Date()
     }
