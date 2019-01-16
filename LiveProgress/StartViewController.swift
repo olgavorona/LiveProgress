@@ -16,7 +16,6 @@ final class StartViewController: GradientViewController {
 
     
     private let MinYears = -120
-    private let MaxYears = -4
     
     private let firstOpen = ProjectSettings.shared.firstOpen
     
@@ -61,7 +60,6 @@ final class StartViewController: GradientViewController {
     @IBOutlet weak var datePicker: UIDatePicker! {
         didSet {
             datePicker.minimumDate = DateHelper.dateFromNow(years: MinYears)
-            datePicker.maximumDate = DateHelper.dateFromNow(years: MaxYears)
         }
     }
     

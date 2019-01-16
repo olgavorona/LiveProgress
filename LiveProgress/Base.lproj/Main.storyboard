@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="SGM-y0-NoB">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAW-5P-Kg9">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
@@ -151,7 +151,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SGM-y0-NoB" firstAttribute="leading" secondItem="3Ut-oY-Gfn" secondAttribute="leading" id="E6C-kR-05b"/>
-                            <constraint firstItem="SGM-y0-NoB" firstAttribute="top" secondItem="3Ut-oY-Gfn" secondAttribute="top" constant="20" id="Y3w-2x-ykH"/>
+                            <constraint firstItem="SGM-y0-NoB" firstAttribute="top" secondItem="3Ut-oY-Gfn" secondAttribute="top" id="Y3w-2x-ykH"/>
                             <constraint firstItem="HAW-5P-Kg9" firstAttribute="height" secondItem="3Ut-oY-Gfn" secondAttribute="height" constant="1" id="bRE-4V-Ogl"/>
                             <constraint firstItem="HAW-5P-Kg9" firstAttribute="width" secondItem="gDK-68-4Ht" secondAttribute="width" id="fnH-SC-iLA"/>
                             <constraint firstAttribute="trailing" secondItem="SGM-y0-NoB" secondAttribute="trailing" id="vI1-tf-oYi"/>
