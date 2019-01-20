@@ -10,7 +10,7 @@ import UIKit
 import TextFieldEffects
 
 
-final class StartViewController: GradientViewController {
+final class StartViewController: UIViewController {
   
     //MARK:- Variables
 

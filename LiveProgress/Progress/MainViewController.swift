@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: GradientViewController, UITabBarDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
    
     //MARK: Variables
     @IBOutlet weak var tableView: UITableView! {
@@ -56,13 +56,6 @@ class MainViewController: GradientViewController, UITabBarDelegate, UITableViewD
             return cell
         }
         return UITableViewCell()
-    }
-    
-    //MARK: Actions
-
-    @IBAction func showSettings(_ sender: Any) {
-        guard let vc = Router.shared.startVC() else { return }
-        show(vc, sender: self)
     }
 }
 

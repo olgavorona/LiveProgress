@@ -28,4 +28,8 @@ class ProjectSettings {
     }
     
     private init() {}
+    
+    func notificationSettings(for type: SwitchTypes) -> Bool {
+        return true
+    }
 }

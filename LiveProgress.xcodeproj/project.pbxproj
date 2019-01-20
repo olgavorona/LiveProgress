@@ -14,7 +14,6 @@
 		03008A9F21C3A570008E7059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9D21C3A570008E7059 /* LaunchScreen.storyboard */; };
 		03008AA721C3A665008E7059 /* ProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AA621C3A665008E7059 /* ProgressCell.swift */; };
 		03008AA921C3A90F008E7059 /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AA821C3A90F008E7059 /* ProgressViewModel.swift */; };
-		03008AAD21C4DDC4008E7059 /* GradientLayerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AAC21C4DDC4008E7059 /* GradientLayerColor.swift */; };
 		03008AAF21C4DF20008E7059 /* ColorSchemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AAE21C4DF20008E7059 /* ColorSchemes.swift */; };
 		03008AB721C4E8CB008E7059 /* Rajdhani-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB121C4E8CB008E7059 /* Rajdhani-Medium.ttf */; };
 		03008AB821C4E8CB008E7059 /* Rajdhani-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB221C4E8CB008E7059 /* Rajdhani-SemiBold.ttf */; };
@@ -22,8 +21,8 @@
 		03008ABA21C4E8CB008E7059 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */; };
 		03008ABB21C4E8CB008E7059 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB521C4E8CB008E7059 /* OFL.txt */; };
 		03008ABC21C4E8CB008E7059 /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */; };
+		039846F621EF8DF500438616 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039846F521EF8DF500438616 /* BackgroundImageView.swift */; };
 		03A1199121DF740B00ED70F3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1199021DF740B00ED70F3 /* Router.swift */; };
-		03A1199321DF9C7B00ED70F3 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1199221DF9C7B00ED70F3 /* LaunchScreen.swift */; };
 		03C24A5221E3AE5B006DA775 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */; };
 		03C24A5421E4F0A3006DA775 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C24A5321E4F0A2006DA775 /* ProgressView.xib */; };
 		03C24A5621E4F1E4006DA775 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C24A5521E4F1E4006DA775 /* UIViewExtension.swift */; };
@@ -37,7 +36,6 @@
 		03FAC02C21E374020082685E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FAC02A21E374020082685E /* MainInterface.storyboard */; };
 		03FAC03021E374020082685E /* ProgressToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03FAC02421E374020082685E /* ProgressToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03FAC03721E378910082685E /* ProjectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D121C79B140026FB26 /* ProjectSettings.swift */; };
-		03FAC03821E378B20082685E /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AA821C3A90F008E7059 /* ProgressViewModel.swift */; };
 		03FAC03921E393AC0082685E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9B21C3A570008E7059 /* Assets.xcassets */; };
 		03FAC03A21E393DA0082685E /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D321C79B280026FB26 /* DateHelper.swift */; };
 		03FAC03C21E396B50082685E /* ColorSchemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AAE21C4DF20008E7059 /* ColorSchemes.swift */; };
@@ -47,6 +45,15 @@
 		03FAC04121E399080082685E /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */; };
 		03FAC04321E399D30082685E /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAC04221E399D30082685E /* CircularProgressBar.swift */; };
 		03FAC04421E3A73F0082685E /* Rajdhani-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03008AB221C4E8CB008E7059 /* Rajdhani-SemiBold.ttf */; };
+		03FBD6E521F3292600A363CC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6E421F3292600A363CC /* SettingsViewController.swift */; };
+		03FBD6EC21F32A2C00A363CC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6EB21F32A2C00A363CC /* SettingsViewModel.swift */; };
+		03FBD6EE21F32A6000A363CC /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6ED21F32A6000A363CC /* SettingsCell.swift */; };
+		03FBD6F021F32B5800A363CC /* SettingsSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6EF21F32B5800A363CC /* SettingsSwitchCell.swift */; };
+		03FBD6F221F32B7700A363CC /* SettingsSwitchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6F121F32B7700A363CC /* SettingsSwitchViewModel.swift */; };
+		03FBD6F421F3311100A363CC /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6F321F3311100A363CC /* Labels.swift */; };
+		03FBD6F521F44CBF00A363CC /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AA821C3A90F008E7059 /* ProgressViewModel.swift */; };
+		03FBD6F621F4522200A363CC /* SettingsSwitchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6F121F32B7700A363CC /* SettingsSwitchViewModel.swift */; };
+		03FBD6F821F4535200A363CC /* TransparentNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6F721F4535200A363CC /* TransparentNavController.swift */; };
 		B0B4FBC288405D7C0A08164C /* Pods_LiveProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +91,6 @@
 		03008AA021C3A570008E7059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03008AA621C3A665008E7059 /* ProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCell.swift; sourceTree = "<group>"; };
 		03008AA821C3A90F008E7059 /* ProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewModel.swift; sourceTree = "<group>"; };
-		03008AAC21C4DDC4008E7059 /* GradientLayerColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayerColor.swift; sourceTree = "<group>"; };
 		03008AAE21C4DF20008E7059 /* ColorSchemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemes.swift; sourceTree = "<group>"; };
 		03008AB121C4E8CB008E7059 /* Rajdhani-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Medium.ttf"; sourceTree = "<group>"; };
 		03008AB221C4E8CB008E7059 /* Rajdhani-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -92,8 +98,8 @@
 		03008AB421C4E8CB008E7059 /* Rajdhani-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Bold.ttf"; sourceTree = "<group>"; };
 		03008AB521C4E8CB008E7059 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Regular.ttf"; sourceTree = "<group>"; };
+		039846F521EF8DF500438616 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		03A1199021DF740B00ED70F3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		03A1199221DF9C7B00ED70F3 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		03C24A5321E4F0A2006DA775 /* ProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressView.xib; sourceTree = "<group>"; };
 		03C24A5521E4F1E4006DA775 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		03F996CD21C76FCB0026FB26 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,13 @@
 		03FAC03621E377D20082685E /* ProgressToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProgressToday.entitlements; sourceTree = "<group>"; };
 		03FAC03D21E3970F0082685E /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		03FAC04221E399D30082685E /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		03FBD6E421F3292600A363CC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		03FBD6EB21F32A2C00A363CC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		03FBD6ED21F32A6000A363CC /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		03FBD6EF21F32B5800A363CC /* SettingsSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchCell.swift; sourceTree = "<group>"; };
+		03FBD6F121F32B7700A363CC /* SettingsSwitchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchViewModel.swift; sourceTree = "<group>"; };
+		03FBD6F321F3311100A363CC /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		03FBD6F721F4535200A363CC /* TransparentNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavController.swift; sourceTree = "<group>"; };
 		19EDC3A0CB2598F646791F2D /* Pods-LiveProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.release.xcconfig"; sourceTree = "<group>"; };
 		8F16BCC3991B233EFFB82026 /* Pods-LiveProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.debug.xcconfig"; sourceTree = "<group>"; };
 		91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,28 +171,22 @@
 			isa = PBXGroup;
 			children = (
 				03FAC03521E3778E0082685E /* LiveProgress.entitlements */,
-				03008A9421C3A56E008E7059 /* AppDelegate.swift */,
-				03008A9B21C3A570008E7059 /* Assets.xcassets */,
-				03008AAE21C4DF20008E7059 /* ColorSchemes.swift */,
-				03F996D321C79B280026FB26 /* DateHelper.swift */,
-				03008AAC21C4DDC4008E7059 /* GradientLayerColor.swift */,
 				03008AA021C3A570008E7059 /* Info.plist */,
-				03008A9D21C3A570008E7059 /* LaunchScreen.storyboard */,
-				03F996CF21C77E100026FB26 /* LinearProgressBar.swift */,
-				03008A9821C3A56E008E7059 /* Main.storyboard */,
-				03008A9621C3A56E008E7059 /* MainViewController.swift */,
-				03008AA621C3A665008E7059 /* ProgressCell.swift */,
-				03008AA821C3A90F008E7059 /* ProgressViewModel.swift */,
-				03F996D121C79B140026FB26 /* ProjectSettings.swift */,
-				03008AB021C4E8CB008E7059 /* Rajdhani */,
+				03008A9421C3A56E008E7059 /* AppDelegate.swift */,
 				03A1199021DF740B00ED70F3 /* Router.swift */,
-				03F996CD21C76FCB0026FB26 /* StartViewController.swift */,
-				03A1199221DF9C7B00ED70F3 /* LaunchScreen.swift */,
+				03008A9B21C3A570008E7059 /* Assets.xcassets */,
+				03008AB021C4E8CB008E7059 /* Fonts */,
+				03FBD6E721F3297700A363CC /* Helper */,
+				03008A9821C3A56E008E7059 /* Main.storyboard */,
+				03FBD6E921F329B300A363CC /* Progress */,
+				03FBD6EA21F329DF00A363CC /* Settings */,
+				03FBD6E621F3294900A363CC /* Start */,
+				03FBD6E821F3299E00A363CC /* Views */,
 			);
 			path = LiveProgress;
 			sourceTree = "<group>";
 		};
-		03008AB021C4E8CB008E7059 /* Rajdhani */ = {
+		03008AB021C4E8CB008E7059 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				03008AB121C4E8CB008E7059 /* Rajdhani-Medium.ttf */,
@@ -189,7 +196,7 @@
 				03008AB521C4E8CB008E7059 /* OFL.txt */,
 				03008AB621C4E8CB008E7059 /* Rajdhani-Regular.ttf */,
 			);
-			path = Rajdhani;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		03FAC02721E374020082685E /* ProgressToday */ = {
@@ -207,6 +214,58 @@
 			path = ProgressToday;
 			sourceTree = "<group>";
 			wrapsLines = 0;
+		};
+		03FBD6E621F3294900A363CC /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				03F996CD21C76FCB0026FB26 /* StartViewController.swift */,
+				03008A9D21C3A570008E7059 /* LaunchScreen.storyboard */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		03FBD6E721F3297700A363CC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				03F996D321C79B280026FB26 /* DateHelper.swift */,
+				03008AAE21C4DF20008E7059 /* ColorSchemes.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		03FBD6E821F3299E00A363CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				039846F521EF8DF500438616 /* BackgroundImageView.swift */,
+				03FBD6F321F3311100A363CC /* Labels.swift */,
+				03FBD6F721F4535200A363CC /* TransparentNavController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03FBD6E921F329B300A363CC /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				03008AA621C3A665008E7059 /* ProgressCell.swift */,
+				03008AA821C3A90F008E7059 /* ProgressViewModel.swift */,
+				03F996CF21C77E100026FB26 /* LinearProgressBar.swift */,
+				03008A9621C3A56E008E7059 /* MainViewController.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		03FBD6EA21F329DF00A363CC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				03F996D121C79B140026FB26 /* ProjectSettings.swift */,
+				03FBD6E421F3292600A363CC /* SettingsViewController.swift */,
+				03FBD6EB21F32A2C00A363CC /* SettingsViewModel.swift */,
+				03FBD6ED21F32A6000A363CC /* SettingsCell.swift */,
+				03FBD6EF21F32B5800A363CC /* SettingsSwitchCell.swift */,
+				03FBD6F121F32B7700A363CC /* SettingsSwitchViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
 		};
 		793FCCBE0ECD2B3A69C0686B /* Frameworks */ = {
 			isa = PBXGroup;
@@ -404,18 +463,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FBD6EE21F32A6000A363CC /* SettingsCell.swift in Sources */,
 				03A1199121DF740B00ED70F3 /* Router.swift in Sources */,
 				03F996D221C79B140026FB26 /* ProjectSettings.swift in Sources */,
+				039846F621EF8DF500438616 /* BackgroundImageView.swift in Sources */,
 				03008A9721C3A56E008E7059 /* MainViewController.swift in Sources */,
 				03F996CE21C76FCB0026FB26 /* StartViewController.swift in Sources */,
 				03008AA721C3A665008E7059 /* ProgressCell.swift in Sources */,
-				03008AAD21C4DDC4008E7059 /* GradientLayerColor.swift in Sources */,
+				03FBD6F221F32B7700A363CC /* SettingsSwitchViewModel.swift in Sources */,
 				03F996D421C79B280026FB26 /* DateHelper.swift in Sources */,
 				03008A9521C3A56E008E7059 /* AppDelegate.swift in Sources */,
-				03A1199321DF9C7B00ED70F3 /* LaunchScreen.swift in Sources */,
+				03FBD6F821F4535200A363CC /* TransparentNavController.swift in Sources */,
+				03FBD6EC21F32A2C00A363CC /* SettingsViewModel.swift in Sources */,
+				03FBD6F421F3311100A363CC /* Labels.swift in Sources */,
 				03008AAF21C4DF20008E7059 /* ColorSchemes.swift in Sources */,
 				03008AA921C3A90F008E7059 /* ProgressViewModel.swift in Sources */,
 				03F996D021C77E100026FB26 /* LinearProgressBar.swift in Sources */,
+				03FBD6F021F32B5800A363CC /* SettingsSwitchCell.swift in Sources */,
+				03FBD6E521F3292600A363CC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,12 +488,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FAC03821E378B20082685E /* ProgressViewModel.swift in Sources */,
 				03FAC03A21E393DA0082685E /* DateHelper.swift in Sources */,
 				03FAC04321E399D30082685E /* CircularProgressBar.swift in Sources */,
 				03FAC03721E378910082685E /* ProjectSettings.swift in Sources */,
+				03FBD6F521F44CBF00A363CC /* ProgressViewModel.swift in Sources */,
 				03FAC03E21E3970F0082685E /* ProgressView.swift in Sources */,
 				03FAC03C21E396B50082685E /* ColorSchemes.swift in Sources */,
+				03FBD6F621F4522200A363CC /* SettingsSwitchViewModel.swift in Sources */,
 				03C24A5621E4F1E4006DA775 /* UIViewExtension.swift in Sources */,
 				03FAC02921E374020082685E /* TodayViewController.swift in Sources */,
 			);
@@ -523,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -578,7 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -598,6 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SC8JJ92TL6;
 				INFOPLIST_FILE = LiveProgress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,6 +686,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SC8JJ92TL6;
 				INFOPLIST_FILE = LiveProgress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,7 +705,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SC8JJ92TL6;
 				INFOPLIST_FILE = ProgressToday/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -658,7 +726,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SC8JJ92TL6;
 				INFOPLIST_FILE = ProgressToday/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

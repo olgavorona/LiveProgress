@@ -19,4 +19,8 @@ class Router {
     func mainVC() -> MainViewController? {
         return storyboard.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController
     }
+    
+    func settingsVC() -> SettingsViewController? {
+        return storyboard.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController
+    }
 }
