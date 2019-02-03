@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
+class MainViewController: BaseViewController, UITabBarDelegate, UITableViewDataSource {
    
     //MARK: Variables
     @IBOutlet weak var tableView: UITableView! {

@@ -41,7 +41,7 @@ class DateHelper {
     }
     
     static func yearProgress() -> Double {
-        let result = Double(currentDay()) / Double(365)
+        let result = Double(currentDay()) / Double(yearDays())
         return 100 * result
     }
     
@@ -62,7 +62,7 @@ class DateHelper {
     }
     
     static func yearLeft() -> Int {
-        let result = 365 - currentDay()
+        let result = yearDays() - currentDay()
         return result
     }
     
@@ -88,6 +88,14 @@ class DateHelper {
     
     //MARK :- Helper
 
+    static func yearDays() -> Int {
+        let now = Date()
+        let year = calendar.dateComponents([.year], from: now).year ?? 0
+        return (year % 4 == 0) ? 366 : 365
+
+        
+    }
+    
     static func nextMonth() -> String {
         let now = Date()
         let startMonth = calendar.date(from: calendar.dateComponents([.year, .month], from: now)) ?? now
@@ -117,11 +125,12 @@ class DateHelper {
         return day + suffix
     }
     
-    
     static func dateFromNow(years: Int) -> Date {
        return calendar.date(byAdding: .year, value: years, to: Date()) ?? Date()
     }
     
+    //MARK :- Current
+
     private static func currentDay() -> Int {
         let now = Date()
         let startYear = calendar.date(from: calendar.dateComponents([.year], from: now))

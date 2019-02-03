@@ -31,6 +31,7 @@
 		03F996D021C77E100026FB26 /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996CF21C77E100026FB26 /* LinearProgressBar.swift */; };
 		03F996D221C79B140026FB26 /* ProjectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D121C79B140026FB26 /* ProjectSettings.swift */; };
 		03F996D421C79B280026FB26 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D321C79B280026FB26 /* DateHelper.swift */; };
+		03F9CE7522073A1C0042FF63 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9CE7422073A1B0042FF63 /* BaseViewController.swift */; };
 		03FAC02621E374020082685E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FAC02521E374020082685E /* NotificationCenter.framework */; };
 		03FAC02921E374020082685E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAC02821E374020082685E /* TodayViewController.swift */; };
 		03FAC02C21E374020082685E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FAC02A21E374020082685E /* MainInterface.storyboard */; };
@@ -106,6 +107,7 @@
 		03F996CF21C77E100026FB26 /* LinearProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
 		03F996D121C79B140026FB26 /* ProjectSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettings.swift; sourceTree = "<group>"; };
 		03F996D321C79B280026FB26 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		03F9CE7422073A1B0042FF63 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		03FAC02421E374020082685E /* ProgressToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ProgressToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FAC02521E374020082685E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		03FAC02821E374020082685E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				039846F521EF8DF500438616 /* BackgroundImageView.swift */,
 				03FBD6F321F3311100A363CC /* Labels.swift */,
 				03FBD6F721F4535200A363CC /* TransparentNavController.swift */,
+				03F9CE7422073A1B0042FF63 /* BaseViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,8 +299,8 @@
 				03008A8D21C3A56E008E7059 /* Sources */,
 				03008A8E21C3A56E008E7059 /* Frameworks */,
 				03008A8F21C3A56E008E7059 /* Resources */,
-				A56FB03BCD2B2C07C242CB1A /* [CP] Embed Pods Frameworks */,
 				03FAC03421E374020082685E /* Embed App Extensions */,
+				B5FBA533445109520031E4F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,7 +437,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A56FB03BCD2B2C07C242CB1A /* [CP] Embed Pods Frameworks */ = {
+		B5FBA533445109520031E4F0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -467,6 +470,7 @@
 				03A1199121DF740B00ED70F3 /* Router.swift in Sources */,
 				03F996D221C79B140026FB26 /* ProjectSettings.swift in Sources */,
 				039846F621EF8DF500438616 /* BackgroundImageView.swift in Sources */,
+				03F9CE7522073A1C0042FF63 /* BaseViewController.swift in Sources */,
 				03008A9721C3A56E008E7059 /* MainViewController.swift in Sources */,
 				03F996CE21C76FCB0026FB26 /* StartViewController.swift in Sources */,
 				03008AA721C3A665008E7059 /* ProgressCell.swift in Sources */,

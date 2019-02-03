@@ -1,5 +1,5 @@
 PODS:
-  - TextFieldEffects (1.5.0)
+  - TextFieldEffects (1.5.1)
 
 DEPENDENCIES:
   - TextFieldEffects
@@ -9,8 +9,8 @@ SPEC REPOS:
     - TextFieldEffects
 
 SPEC CHECKSUMS:
-  TextFieldEffects: bf9e9cac7cb1a97d632fbcd0724bb6347dd86633
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
 
-PODFILE CHECKSUM: f3137c700c43c0406c64a7a572f6de009e5f0279
+PODFILE CHECKSUM: 35b82b46005a20be0c60c58e3f478aadb4616997
 
 COCOAPODS: 1.5.3

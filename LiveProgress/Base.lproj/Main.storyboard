@@ -168,6 +168,7 @@
                         <viewLayoutGuide key="safeArea" id="gDK-68-4Ht"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="loe-P4-X2r" id="eff-tE-wFg"/>
                         <outlet property="birthDate" destination="1Go-my-PpM" id="Ynt-ca-qaW"/>
                         <outlet property="datePicker" destination="29e-z0-sE7" id="Tzp-tZ-bjT"/>
                         <outlet property="nextButton" destination="YiM-hm-nDZ" id="Ccv-dU-DQV"/>
@@ -191,7 +192,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fix-mB-LzV" customClass="BackgroundImageView" customModule="LiveProgress" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCj-ag-Xo8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCj-ag-Xo8">
                                 <rect key="frame" x="0.0" y="100" width="375" height="567"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -199,7 +200,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uqg-dh-BOw" id="LIh-US-VNL">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGp-XP-vOI">
@@ -338,6 +339,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="Fix-mB-LzV" id="VPR-1C-kdo"/>
                         <outlet property="tableView" destination="uCj-ag-Xo8" id="Ykv-H8-4rn"/>
                     </connections>
                 </viewController>
@@ -399,6 +401,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="Y1B-Qq-OpI" id="Euj-ZP-jge"/>
                                         </connections>
@@ -416,7 +419,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gso-th-OFE">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gso-th-OFE">
                                                     <rect key="frame" x="310" y="14.5" width="51" height="31"/>
                                                 </switch>
                                             </subviews>
@@ -447,7 +450,7 @@
                             <constraint firstItem="9WF-qV-gq2" firstAttribute="bottom" secondItem="YF7-3Y-jdj" secondAttribute="bottom" id="ArI-Ex-hle"/>
                             <constraint firstItem="YF7-3Y-jdj" firstAttribute="top" secondItem="dnP-RK-OkY" secondAttribute="top" id="LR2-xr-xSp"/>
                             <constraint firstItem="XAU-3M-eEf" firstAttribute="top" secondItem="dnP-RK-OkY" secondAttribute="top" id="Och-xP-Y2K"/>
-                            <constraint firstItem="9WF-qV-gq2" firstAttribute="bottom" secondItem="XAU-3M-eEf" secondAttribute="bottom" id="UOQ-uC-gCH"/>
+                            <constraint firstAttribute="bottom" secondItem="XAU-3M-eEf" secondAttribute="bottom" id="UOQ-uC-gCH"/>
                             <constraint firstItem="9WF-qV-gq2" firstAttribute="trailing" secondItem="YF7-3Y-jdj" secondAttribute="trailing" id="dbv-lM-m4c"/>
                             <constraint firstItem="XAU-3M-eEf" firstAttribute="leading" secondItem="9WF-qV-gq2" secondAttribute="leading" id="o2J-Vk-ett"/>
                             <constraint firstAttribute="trailing" secondItem="XAU-3M-eEf" secondAttribute="trailing" id="soR-YT-pJC"/>
@@ -457,6 +460,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZjB-UX-KPv"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="XAU-3M-eEf" id="JHR-57-Z9q"/>
                         <outlet property="tableView" destination="YF7-3Y-jdj" id="ife-CH-uBX"/>
                         <segue destination="0w0-Oj-yMK" kind="show" identifier="date" id="ogF-z2-qGO"/>
                     </connections>

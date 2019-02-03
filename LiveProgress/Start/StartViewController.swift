@@ -10,7 +10,7 @@ import UIKit
 import TextFieldEffects
 
 
-final class StartViewController: UIViewController {
+final class StartViewController: BaseViewController {
   
     //MARK:- Variables
 

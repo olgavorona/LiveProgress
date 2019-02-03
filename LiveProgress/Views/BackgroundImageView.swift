@@ -9,17 +9,23 @@
 import UIKit
 
 class BackgroundImageView: UIImageView {
-    
+    var backImage: UIImage? {
+        return ProjectSettings.shared.getBGImage() ?? UIImage(named: "gradient")
+    }
     override func awakeFromNib() {
-        image = UIImage(named: "gradient")
+        image = backImage
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.image = UIImage(named: "gradient")
+        self.image = backImage
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.image = UIImage(named: "gradient")
+        self.image = backImage
+    }
+    
+    func update() {
+        self.image = backImage
     }
 }
