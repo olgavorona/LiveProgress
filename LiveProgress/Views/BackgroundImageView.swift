@@ -14,11 +14,13 @@ class BackgroundImageView: UIImageView {
     }
     override func awakeFromNib() {
         image = backImage
+        contentMode = .scaleAspectFill
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.image = backImage
+        contentMode = .scaleAspectFill
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

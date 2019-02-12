@@ -20,5 +20,4 @@ class BaseViewController: UIViewController {
         backgroundImage?.update()
     }
 
-
 }

@@ -16,8 +16,8 @@ class ProgressCell: UITableViewCell {
     @IBOutlet weak var leftLabel: UILabel!
     @IBOutlet weak var progressView: LinearProgressBar! {
         didSet {
-            progressView.barColor = standardScheme.third.withAlphaComponent(0.6)
-            progressView.trackColor = standardScheme.third.withAlphaComponent(0.2)
+            progressView.barColor = standardScheme.third.withAlphaComponent(0.7)
+            progressView.trackColor = standardScheme.third.withAlphaComponent(0.4)
             progressView.barThickness = 40.0
         }
     }

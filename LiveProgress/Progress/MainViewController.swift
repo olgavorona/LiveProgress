@@ -10,7 +10,9 @@ import UIKit
 
 class MainViewController: BaseViewController, UITabBarDelegate, UITableViewDataSource {
    
+    
     //MARK: Variables
+    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.separatorColor = UIColor.clear
@@ -21,7 +23,9 @@ class MainViewController: BaseViewController, UITabBarDelegate, UITableViewDataS
     
     var viewModels: [ProgressViewModel] = []
    
+    
     //MARK: View Controller
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -42,6 +46,7 @@ class MainViewController: BaseViewController, UITabBarDelegate, UITableViewDataS
         tableView.reloadData()
     }
     
+    
     //MARK: Table View
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,5 +62,40 @@ class MainViewController: BaseViewController, UITabBarDelegate, UITableViewDataS
         }
         return UITableViewCell()
     }
+    
+    //MARK:- image screen share
+    @IBAction func shareScreenshot(_ sender: Any) {
+        if let img = screenshot() {
+            let objectsToShare = [img] as [Any]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            activityVC.excludedActivityTypes = [UIActivity.ActivityType.airDrop, UIActivity.ActivityType.addToReadingList]
+            self.present(activityVC, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func shareInst(_ sender: Any) {
+        guard let img = screenshot()?.pngData() else { return }
+        guard let urlScheme = URL(string: "instagram-stories://share"),
+            UIApplication.shared.canOpenURL(urlScheme) else {
+                return
+        }
+        let pasteboardItems = [["com.instagram.sharedSticker.backgroundImage": img]]
+        let pasteboardOptions: [UIPasteboard.OptionsKey: Any] = [.expirationDate: Date().addingTimeInterval(60 * 5)]
+        UIPasteboard.general.setItems(pasteboardItems, options: pasteboardOptions)
+        UIApplication.shared.open(urlScheme)
+    }
+    
+    func screenshot() -> UIImage? {
+        let frame = CGRect(x: view.frame.origin.x,
+                           y: view.frame.origin.y,
+                           width: view.frame.size.width,
+                           height: tableView.frame.height)
+        UIGraphicsBeginImageContextWithOptions(frame.size, true, 0.0)
+        view.drawHierarchy(in: view.frame, afterScreenUpdates: true)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return img
+    }
+
 }
 
