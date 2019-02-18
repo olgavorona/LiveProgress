@@ -12,11 +12,19 @@ class SettingsSwitchCell: UITableViewCell, ViewModelCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var settingsSwitch: UISwitch!
+    weak var viewModel: SettingsSwitchViewModel?
     
     func setup(with viewModel: ViewModel) {
         if let viewModel = viewModel as? SettingsSwitchViewModel {
+            self.viewModel = viewModel
             nameLabel.text = viewModel.title
- 
+            settingsSwitch.isOn = ProjectSettings.shared.notificationSettings(for: viewModel.type)
         }
+    }
+    
+    @IBAction func changeSettings(_ sender: Any) {
+        guard let viewModel = viewModel else { return }
+        ProjectSettings.shared.saveNotificationSettings(for: viewModel.type,
+                                                        value: settingsSwitch.isOn)
     }
 }

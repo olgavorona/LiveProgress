@@ -23,6 +23,7 @@ class MainViewController: BaseViewController, UITabBarDelegate, UITableViewDataS
     
     var viewModels: [ProgressViewModel] = []
    
+    var timer: Timer?
     
     //MARK: View Controller
     
@@ -33,13 +34,22 @@ class MainViewController: BaseViewController, UITabBarDelegate, UITableViewDataS
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         updateData()
+        timer = Timer.scheduledTimer(timeInterval: 0.5,
+                                     target: self,
+                                     selector: #selector(MainViewController.updateData),
+                                     userInfo: nil,
+                                     repeats: true)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        timer?.invalidate()
+        super.viewWillDisappear(animated)
     }
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }
     
-    func updateData() {
+    @objc func updateData() {
         viewModels = [ProgressViewModel(type: .day),
                       ProgressViewModel(type: .month),
                       ProgressViewModel(type: .year)]
@@ -64,6 +74,7 @@ class MainViewController: BaseViewController, UITabBarDelegate, UITableViewDataS
     }
     
     //MARK:- image screen share
+    
     @IBAction func shareScreenshot(_ sender: Any) {
         if let img = screenshot() {
             let objectsToShare = [img] as [Any]

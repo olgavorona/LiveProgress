@@ -6,7 +6,7 @@
 //  Copyright © 2019 Olga Vorona. All rights reserved.
 //
 
-public enum SwitchTypes {
+public enum SwitchTypes: String {
     case day
     case roundMonth
     case roundYear

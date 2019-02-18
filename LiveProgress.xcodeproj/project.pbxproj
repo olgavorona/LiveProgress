@@ -36,7 +36,6 @@
 		03FAC02921E374020082685E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAC02821E374020082685E /* TodayViewController.swift */; };
 		03FAC02C21E374020082685E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FAC02A21E374020082685E /* MainInterface.storyboard */; };
 		03FAC03021E374020082685E /* ProgressToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03FAC02421E374020082685E /* ProgressToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		03FAC03721E378910082685E /* ProjectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D121C79B140026FB26 /* ProjectSettings.swift */; };
 		03FAC03921E393AC0082685E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03008A9B21C3A570008E7059 /* Assets.xcassets */; };
 		03FAC03A21E393DA0082685E /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D321C79B280026FB26 /* DateHelper.swift */; };
 		03FAC03C21E396B50082685E /* ColorSchemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03008AAE21C4DF20008E7059 /* ColorSchemes.swift */; };
@@ -56,6 +55,9 @@
 		03FBD6F621F4522200A363CC /* SettingsSwitchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6F121F32B7700A363CC /* SettingsSwitchViewModel.swift */; };
 		03FBD6F821F4535200A363CC /* TransparentNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBD6F721F4535200A363CC /* TransparentNavController.swift */; };
 		03FEDBDF221AAEFF00CE7EA3 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FEDBDE221AAEFF00CE7EA3 /* ContactList.swift */; };
+		03FEDBE1221AD06600CE7EA3 /* ScheduleNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FEDBE0221AD06600CE7EA3 /* ScheduleNotificationHelper.swift */; };
+		03FEDBE2221AD46400CE7EA3 /* ProjectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F996D121C79B140026FB26 /* ProjectSettings.swift */; };
+		03FEDBE3221AD46700CE7EA3 /* ScheduleNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FEDBE0221AD06600CE7EA3 /* ScheduleNotificationHelper.swift */; };
 		B0B4FBC288405D7C0A08164C /* Pods_LiveProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +128,7 @@
 		03FBD6F321F3311100A363CC /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		03FBD6F721F4535200A363CC /* TransparentNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavController.swift; sourceTree = "<group>"; };
 		03FEDBDE221AAEFF00CE7EA3 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		03FEDBE0221AD06600CE7EA3 /* ScheduleNotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleNotificationHelper.swift; sourceTree = "<group>"; };
 		19EDC3A0CB2598F646791F2D /* Pods-LiveProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.release.xcconfig"; sourceTree = "<group>"; };
 		8F16BCC3991B233EFFB82026 /* Pods-LiveProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveProgress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveProgress/Pods-LiveProgress.debug.xcconfig"; sourceTree = "<group>"; };
 		91F855954C34E391CEB62820 /* Pods_LiveProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,6 +236,7 @@
 			children = (
 				03F996D321C79B280026FB26 /* DateHelper.swift */,
 				03008AAE21C4DF20008E7059 /* ColorSchemes.swift */,
+				03FEDBE0221AD06600CE7EA3 /* ScheduleNotificationHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -481,6 +485,7 @@
 				03FBD6F221F32B7700A363CC /* SettingsSwitchViewModel.swift in Sources */,
 				03F996D421C79B280026FB26 /* DateHelper.swift in Sources */,
 				03008A9521C3A56E008E7059 /* AppDelegate.swift in Sources */,
+				03FEDBE1221AD06600CE7EA3 /* ScheduleNotificationHelper.swift in Sources */,
 				03FBD6F821F4535200A363CC /* TransparentNavController.swift in Sources */,
 				03FBD6EC21F32A2C00A363CC /* SettingsViewModel.swift in Sources */,
 				03FBD6F421F3311100A363CC /* Labels.swift in Sources */,
@@ -496,9 +501,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FEDBE3221AD46700CE7EA3 /* ScheduleNotificationHelper.swift in Sources */,
+				03FEDBE2221AD46400CE7EA3 /* ProjectSettings.swift in Sources */,
 				03FAC03A21E393DA0082685E /* DateHelper.swift in Sources */,
 				03FAC04321E399D30082685E /* CircularProgressBar.swift in Sources */,
-				03FAC03721E378910082685E /* ProjectSettings.swift in Sources */,
 				03FBD6F521F44CBF00A363CC /* ProgressViewModel.swift in Sources */,
 				03FAC03E21E3970F0082685E /* ProgressView.swift in Sources */,
 				03FAC03C21E396B50082685E /* ColorSchemes.swift in Sources */,

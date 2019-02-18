@@ -469,6 +469,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gso-th-OFE">
                                                     <rect key="frame" x="310" y="14.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="changeSettings:" destination="tH2-oe-BdO" eventType="valueChanged" id="LG0-QY-RxB"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>

@@ -32,7 +32,13 @@ class ProjectSettings {
     
     //MARK:- notification
     func notificationSettings(for type: SwitchTypes) -> Bool {
-        return true
+        return defaults.bool(forKey: type.rawValue)
+    }
+    
+    func saveNotificationSettings(for type: SwitchTypes,
+                                  value: Bool)  {
+         defaults.set(value, forKey: type.rawValue)
+        ScheduleNotificationHelper.schedule(type: type)
     }
     
     //MARK:- image

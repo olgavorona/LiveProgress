@@ -84,7 +84,6 @@ open class LinearProgressBar: UIView {
         
         let beginPoint = CGPoint(x: barPadding + trackOffset, y: frame.size.height / 2)
         
-        
         // Progress Bar Track
         drawOn(
             context: context,
