@@ -8,18 +8,50 @@
 
 import Foundation
 
+enum SettingsTypes: String {
+    case notifications
+    case date
+    case image
+    case developer
+}
+
 class SettingsViewModel: ViewModel {
+
+    
     let reuseIdentifier: String = "SettingsCell"
 
+    let type: SettingsTypes
     let title: String
-    let segue: String
     let showAttribute: Bool
     
-    init(title: String,
-         segue: String,
+    init(type: SettingsTypes,
          attribute: Bool = true) {
-        self.title = title
-        self.segue = segue
+        self.type = type
+        self.title = SettingsViewModel.title(for: type)
         self.showAttribute = attribute
     }
+    
+    static func title(for type: SettingsTypes) -> String {
+        var result = ""
+        switch type {
+        case .notifications:
+            result = "Notifications"
+        case .date:
+            result = "Change Birth date"
+        case .image:
+            result = "Pick a new background"
+        case .developer:
+            result = "Contact with Olga(developer)"
+
+        }
+        return result
+    }
+    
+    enum Segues: String {
+        case notifications
+        case date
+        case image
+        case developer
+    }
+
 }

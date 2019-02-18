@@ -9,30 +9,17 @@
 import UIKit
 
 class SettingsViewController: BaseViewController {
-    enum Segues: String {
-        case notifications
-        case date
-        case image
-    }
-    
-    enum Titles: String {
-        case notifications = "Notifications"
-        case date = "Change Birth date"
-        case image = "Pick a new background"
-    }
-    
     var viewModels: [ViewModel] {
         get {
             return isNotifications ? notificationViewModels : settingsViewModels
         }
     }
     
-    let settingsViewModels: [ViewModel] = [SettingsViewModel(title: Titles.notifications.rawValue,
-                                                             segue: Segues.notifications.rawValue),
-                                           SettingsViewModel(title: Titles.date.rawValue,
-                                                             segue: Segues.date.rawValue),
-                                           SettingsViewModel(title: Titles.image.rawValue,
-                                                             segue: Segues.image.rawValue)
+    let settingsViewModels: [ViewModel] = [SettingsViewModel(type: .notifications),
+                                           SettingsViewModel(type: .date),
+                                           SettingsViewModel(type: .image),
+                                           SettingsViewModel(type: .developer,
+                                                             attribute: false)
     ]
     
     let notificationViewModels: [ViewModel] = [SettingsSwitchViewModel(type: SwitchTypes.day),
@@ -46,9 +33,11 @@ class SettingsViewController: BaseViewController {
         didSet {
             tableView.separatorColor = UIColor.clear
             tableView.estimatedRowHeight = 100
-            tableView.rowHeight = 100//UITableView.automaticDimension
+            tableView.rowHeight = 100
         }
     }
+    
+    let sheet = ContactList.create()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +61,7 @@ class SettingsViewController: BaseViewController {
 }
 
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
+ 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModels.count
     }
@@ -87,16 +77,25 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let viewModel = viewModels[indexPath.row] as? SettingsViewModel {
-            if viewModel.segue == Segues.notifications.rawValue,
-                let vc = Router.shared.settingsVC(){
-                vc.isNotifications = true
-                self.show(vc, sender: self)
-            } else if viewModel.segue == Segues.date.rawValue {
-                performSegue(withIdentifier: viewModel.segue, sender: self)
-            } else if viewModel.segue == Segues.image.rawValue {
+            switch viewModel.type {
+            case .notifications:
+                if let vc = Router.shared.settingsVC() {
+                    vc.isNotifications = true
+                    self.show(vc, sender: self)
+                }
+                
+            case .date:
+                performSegue(withIdentifier: viewModel.type.rawValue, sender: self)
+            case .image:
                 photoLibrary()
+            case .developer:
+                contactList()
             }
         }
+    }
+    
+    func contactList() {
+        present(sheet, animated: true, completion: nil)
     }
     
     func photoLibrary(){
@@ -117,7 +116,7 @@ extension SettingsViewController: UIImagePickerControllerDelegate, UINavigationC
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             ProjectSettings.shared.saveBGImage(image: image)
         } else{
-            print("Something went wrong in  image")
+            print("Something went wrong in image")
         }
       dismiss(animated: true, completion: nil)
     }
